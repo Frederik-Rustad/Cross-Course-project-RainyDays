@@ -1,32 +1,22 @@
 
 
-.mainheader
- {
+.mainheader {
     display: block;
     margin-left: auto;
     margin-right: auto;
  }
- nav
- {
-    
-    display: inline-block;
-    list-style-type: none;
+ nav {
+    display: inline-flex;
     font-family: 'Outfit', sans-serif;;
     background-color: black;
     padding: 1px;
-    word-spacing: 2px;  
+    word-spacing: 2px;
+    overflow: hidden; 
  }
- nav a 
- {   
-    
-    position: relative;
-    color: white;
-    overflow: hidden;  
- }
- .topnav {
-    
-	color: white;
-    padding: 5px 16px;
-	text-decoration: none;
-	font-size: 24px;
- }
+ .topnav a {
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 24px;
+}
