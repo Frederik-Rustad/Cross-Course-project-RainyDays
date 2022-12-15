@@ -1,22 +1,37 @@
 
 
 .mainheader {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
- }
+   }
  nav {
-    display: inline-flex;
-    font-family: 'Outfit', sans-serif;;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
     background-color: black;
-    padding: 1px;
-    word-spacing: 2px;
-    overflow: hidden; 
- }
- .topnav a {
+    padding: 5px 0px;
+    width: 1033px;
+       }
+ .topnav {     
+    font-family: outfit;   
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;    
+    width: 1033px;
     color: white;
-    text-align: center;
-    padding: 14px 20px;
+    padding: 5px 0px;
     text-decoration: none;
     font-size: 24px;
-}
+    overflow: hidden; 
+   }
+   #nav1,#nav2,#nav3,#nav4,#nav5,#nav6,#nav7 {
+     padding-left: 14px;
+     padding-right: 14px;
+   }
+   footer {
+      position: relative;
+      top: 400px;
+   }
+   
