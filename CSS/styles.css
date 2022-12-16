@@ -42,6 +42,7 @@ padding-left: 14px;
 padding-right: 14px;
 }
 .brandlogos {
+border: 1px solid red;
 background-color: chocolate;
 display: flex;
 justify-content: center;
@@ -49,15 +50,18 @@ padding: 20px 60px;
 margin: 0px 1000px;
 }
 .category {
+border: 1px solid red;
 font-family: outfit;  
 display: flex;
 justify-content: center;
 }
 .cat1, .cat2, .cat3 {
+border: 1px solid red;
 background-color: burlywood;
 padding: 20px 120px;
 }
 .banner {
+border: 1px solid red;
 background-color: chartreuse;
 display: flex;
 align-content:  center;
@@ -67,6 +71,7 @@ margin-left: auto;
 margin-right: auto;
 }
 .sosialmedia {
+border: 1px solid red;
 background-color: blue;
 margin: 2%;
 color: antiquewhite;
@@ -74,10 +79,12 @@ display: flex;
 justify-content: flex-end;
 }
 .cat4, .cat5, .cat6 {
+border: 1px solid red;
 background-color: burlywood;
 padding: 20px 120px;
 }
 .category2{
+border: 1px solid red;
 font-family: outfit;  
 display: flex;
 justify-content: center;
