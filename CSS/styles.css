@@ -1,37 +1,93 @@
+body {
+background-color: aqua;
+display: grid;
+grid-gap: 1em;
+grid-template-areas:
+'nav nav nav'
+'.cat1 .cat2 .cat3'
 
-
+;
+}
 .mainheader {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-   }
- nav {
-    display: flex;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: black;
-    padding: 5px 0px;
-    width: 1033px;
-       }
- .topnav {     
-    font-family: outfit;   
-    background-color: black;
-    margin-left: auto;
-    margin-right: auto;    
-    width: 1033px;
-    color: white;
-    padding: 5px 0px;
-    text-decoration: none;
-    font-size: 24px;
-    overflow: hidden; 
-   }
-   #nav1,#nav2,#nav3,#nav4,#nav5,#nav6,#nav7 {
-     padding-left: 14px;
-     padding-right: 14px;
-   }
-   footer {
-      position: relative;
-      top: 400px;
-   }
+display: flex;
+margin-left: auto;
+margin-right: auto;
+}
+nav {
+display: flex;
+justify-content: space-around;
+margin-left: auto;
+margin-right: auto;
+background-color: black;
+padding: 5px 0px;
+width: 1033px;
+}
+.topnav {     
+font-family: outfit;   
+background-color: black;
+margin-left: auto;
+margin-right: auto;    
+width: 1033px;
+color: white;
+padding: 5px 0px;
+text-decoration: none;
+font-size: 24px;
+overflow: hidden; 
+}
+#nav1,#nav2,#nav3,#nav4,#nav5,#nav6,#nav7 {
+padding-left: 14px;
+padding-right: 14px;
+}
+.brandlogos {
+background-color: chocolate;
+display: flex;
+justify-content: center;
+margin-left: 435px;
+margin-right: 435px;
+}
+.category {
+font-family: outfit;  
+display: flex;
+justify-content: center;
+}
+.cat1, .cat2, .cat3 {
+background-color: burlywood;
+padding: 20px 120px;
+}
+.banner {
+background-color: chartreuse;
+display: flex;
+align-content:  center;
+justify-content: center;
+width: 1033px;
+margin-left: auto;
+margin-right: auto;
+}
+.sosialmedia {
+background-color: blue;
+margin: 2%;
+color: antiquewhite;
+display: flex;
+justify-content: flex-end;
+}
+.cat4, .cat5, .cat6 {
+background-color: burlywood;
+padding: 20px 120px;
+}
+.category2{
+font-family: outfit;  
+display: flex;
+justify-content: center;
+}
+footer {
+background-color: black;
+color: white;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+}
+
+/*Desktop styles*/
+@media only screen and (min-width:769px) {
    
+}
