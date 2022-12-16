@@ -4,8 +4,11 @@ display: grid;
 grid-gap: 1em;
 grid-template-areas:
 'nav nav nav'
+'.brandlogos'
 '.cat1 .cat2 .cat3'
-
+'banner'
+'.cat4 .cat5 .cat6'
+'footer'
 ;
 }
 .mainheader {
@@ -42,8 +45,8 @@ padding-right: 14px;
 background-color: chocolate;
 display: flex;
 justify-content: center;
-margin-left: 435px;
-margin-right: 435px;
+padding: 20px 60px;
+margin: 0px 1000px;
 }
 .category {
 font-family: outfit;  
