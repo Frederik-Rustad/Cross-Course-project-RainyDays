@@ -11,6 +11,16 @@ grid-template-areas:
 'footer'
 ;
 }
+h1{
+font-family: outfit400;
+}
+.sicons{
+height: 65px;
+width: auto;
+position: relative;
+top: 10px;
+left: -400px;
+}
 .mainheader {
 display: flex;
 margin-left: auto;
@@ -72,7 +82,7 @@ border: 1px solid red;
 background-color: chartreuse;
 display: flex;
 align-content:  center;
-justify-content: center;
+justify-content: space-between;
 width: 1033px;
 margin-left: auto;
 margin-right: auto;
@@ -112,5 +122,5 @@ justify-content: center;
 
 /*Desktop styles*/
 @media only screen and (min-width:769px) {
-   
+
 }
