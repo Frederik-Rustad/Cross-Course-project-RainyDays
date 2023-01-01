@@ -1,5 +1,4 @@
 body {
-background-color: aqua;
 display: grid;
 grid-gap: 1em;
 grid-template-areas:
@@ -47,16 +46,12 @@ padding-left: 12px;
 padding-right: 12px;
 }
 .brandspace {
-border: 1px solid red;
 display: flex;
 margin-left: auto;
 margin-right: auto;
-background: gray;
 width: 1033px;
 }
 .brandlogos {
-border: 1px solid red;
-background-color: chocolate;
 display: flex;
 align-content: center;
 justify-content: center;
@@ -64,22 +59,26 @@ margin: auto;
 height: 80px;
 width: 500px;
 }
-#category {
-border: 1px solid red;
+#category, #category2 {
 display: flex;
 margin-left: auto;
 margin-right: auto;
 justify-content: space-between;
 width: 1033px;
+font-family: outfit, Sans-serif;
+font-size: 18px;
+font-weight: 400;
+}
+h2 {
+    margin: 2px;
+    font-family: outfit, Sans-serif;
+    font-size: 24px;
+    font-weight: 800;
 }
 .cat1, .cat2, .cat3 {
-border: 1px solid red;
-background-color: burlywood;
 width: 320px;
 }
 .banner {
-border: 1px solid red;
-background-color: chartreuse;
 display: flex;
 align-content:  center;
 justify-content: space-between;
@@ -90,34 +89,29 @@ margin-top: 20px;
 margin-bottom: 20px;
 }
 .sosialmedia {
-border: 1px solid red;
-background-color: blue;
 color: antiquewhite;
 margin: 10px;
 display: flex;
 padding: 5px 5px;
 }
-#category2{
-border: 1px solid red;
-display: flex;
-margin-left: auto;
-margin-right: auto;
-justify-content: space-between;
-width: 1033px;
-}
+
 .cat4, .cat5, .cat6 {
-border: 1px solid red;
-background-color: burlywood;
 width: 320px;
 
 }
 footer {
 background-color: black;
 color: white;
-margin-top: 60px;
 height: 200px;
+}
+.footercontent {
 display: flex;
 justify-content: center;
+align-content: space-between;
+}
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*Desktop styles*/
