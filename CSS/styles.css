@@ -102,16 +102,27 @@ width: 320px;
 footer {
 background-color: black;
 color: white;
-height: 200px;
+height: 230px;
 }
 .footercontent {
 display: flex;
 justify-content: center;
-align-content: space-between;
+align-content: space-around;
+}
+li a {
+    font-family: outfit;
+    color: white;
+}
+.footerlogo {
+margin-right: 200px;
 }
 .copyright {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    color: gray;
+}
+a {
+    color: gray;
 }
 
 /*Desktop styles*/
