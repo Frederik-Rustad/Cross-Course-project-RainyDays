@@ -45,6 +45,11 @@ text-decoration: none;
 padding-left: 12px;
 padding-right: 12px;
 }
+#nav1:hover,#nav2:hover,#nav3:hover,#nav4:hover,#nav5:hover,#nav6:hover,#nav7:hover {
+    background-color: white;
+    color: black;
+
+}
 .brandspace {
 display: flex;
 margin-left: auto;
@@ -75,9 +80,13 @@ h2 {
     font-size: 24px;
     font-weight: 800;
 }
-.cat1, .cat2, .cat3 {
+.cat1, .cat2, .cat3, .cat4, .cat5, .cat6 {
 width: 320px;
 }
+.cat1:hover, .cat2:hover, .cat3:hover, .cat4:hover, .cat5:hover, .cat6:hover {
+    width: 320px;
+    background-color: #ff7b00;
+    }
 .banner {
 display: flex;
 align-content:  center;
@@ -93,11 +102,6 @@ color: antiquewhite;
 margin: 10px;
 display: flex;
 padding: 5px 5px;
-}
-
-.cat4, .cat5, .cat6 {
-width: 320px;
-
 }
 footer {
 background-color: black;
