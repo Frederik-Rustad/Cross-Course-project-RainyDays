@@ -46,8 +46,9 @@ padding-left: 12px;
 padding-right: 12px;
 }
 #nav1:hover,#nav2:hover,#nav3:hover,#nav4:hover,#nav5:hover,#nav6:hover,#nav7:hover {
-    background-color: white;
-    color: black;
+background-color: white;
+box-shadow: inset 0 5px 5px 2px grey;
+color: black;
 
 }
 .brandspace {
@@ -84,9 +85,9 @@ h2 {
 width: 320px;
 }
 .cat1:hover, .cat2:hover, .cat3:hover, .cat4:hover, .cat5:hover, .cat6:hover {
-    width: 320px;
-    background-color: #ff7b00;
-    }
+width: 320px;
+background-color: #ff7b00;
+}
 .banner {
 display: flex;
 align-content:  center;
