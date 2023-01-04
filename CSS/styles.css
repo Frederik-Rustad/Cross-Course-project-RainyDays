@@ -27,7 +27,7 @@ margin-right: auto;
 }
 nav {
 display: flex;
-justify-content: space-evenly;
+justify-content:space-around;
 margin-left: auto;
 margin-right: auto;
 background-color: black;
@@ -41,15 +41,14 @@ color: white;
 background-color: black;
 text-decoration: none;
 }
-#nav1,#nav2,#nav3,#nav4,#nav5,#nav6,#nav7 {  
-padding-left: 5px;
-padding-right: 5px;
-}
 #nav1:hover,#nav2:hover,#nav3:hover,#nav4:hover,#nav5:hover,#nav6:hover,#nav7:hover {
 background-color: white;
 box-shadow: inset 0 5px 5px 2px grey;
 color: black;
-
+}
+#nav1,#nav2,#nav3,#nav4,#nav5,#nav6,#nav7 {  
+padding-left: 5px;
+padding-right: 5px;
 }
 .brandspace {
 display: flex;
@@ -87,6 +86,7 @@ width: 320px;
 .cat1:hover, .cat2:hover, .cat3:hover, .cat4:hover, .cat5:hover, .cat6:hover {
 width: 320px;
 background-color: #ff7b00;
+color: white;
 }
 .banner {
 display: flex;
