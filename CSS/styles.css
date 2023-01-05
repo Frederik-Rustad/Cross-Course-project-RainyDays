@@ -91,6 +91,13 @@ width: 320px;
 background-color: #ff7b00;
 color: white;
 }
+#categoryA, #categoryB {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1033px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .banner {
 display: flex;
 align-content:  center;

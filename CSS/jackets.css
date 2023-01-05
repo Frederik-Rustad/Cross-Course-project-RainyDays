@@ -1,0 +1,126 @@
+body {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+    'nav nav nav'
+    '.brandlogos'
+    '.cat1 .cat2 .cat3'
+    'banner'
+    '.cat4 .cat5 .cat6'
+    'footer'
+    ;
+    }
+    h1{
+    font-family: outfit400;
+    }
+    .sicons{
+    height: 65px;
+    width: auto;
+    position: relative;
+    top: 10px;
+    left: -400px;
+    }
+    .mainheader {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    nav {
+    display: flex;
+    justify-content:space-around;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    padding: 5px 0px;
+    width: 1033px;
+    }
+    .topnav { 
+    font-family: outfit;   
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    }
+    #nav1:hover,#nav2:hover,#nav3:hover,#nav4:hover,#nav5:hover,#nav6:hover,#nav7:hover {
+    background-color: white;
+    box-shadow: inset 0 5px 5px 2px grey;
+    color: black;
+    }
+    #nav1,#nav2,#nav3,#nav4,#nav5,#nav6,#nav7 {  
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+    .brandspace {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1033px;
+    }
+    .brandlogos {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    height: 80px;
+    width: 500px;
+    }
+    #category, #category2 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    width: 1033px;
+    font-family: outfit, Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    }
+    .cattext {
+        margin-left: 5px;
+    }
+    h2 {
+        margin: 2px;
+        font-family: outfit, Sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+    }
+    .cat1, .cat2, .cat3, .cat4, .cat5, .cat6 {
+    width: 320px;
+    }
+    #categoryA, #categoryB, #categoryC {
+        display: flex;
+        justify-content: space-evenly;
+        width: 1033px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+    background-color: black;
+    color: white;
+    height: 230px;
+    }
+    .footercontent {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    }
+    li a {
+        font-family: outfit;
+        color: white;
+    }
+    .footerlogo {
+    margin-right: 200px;
+    }
+    .copyright {
+        display: flex;
+        justify-content: center;
+        color: gray;
+        }
+    .email {
+        color: gray;
+        margin-left: 10px;
+    }
+    
+    /*Desktop styles*/
+    @media only screen and (min-width:769px) {
+    
+    }
