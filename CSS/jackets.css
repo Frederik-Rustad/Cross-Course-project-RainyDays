@@ -92,6 +92,7 @@ body {
         width: 1033px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 20px;
     }
     footer {
     background-color: black;
@@ -119,7 +120,6 @@ body {
         color: gray;
         margin-left: 10px;
     }
-    
     /*Desktop styles*/
     @media only screen and (min-width:769px) {
     
