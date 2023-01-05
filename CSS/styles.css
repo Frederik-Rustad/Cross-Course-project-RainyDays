@@ -74,6 +74,9 @@ font-family: outfit, Sans-serif;
 font-size: 18px;
 font-weight: 400;
 }
+.cattext {
+    margin-left: 5px;
+}
 h2 {
     margin: 2px;
     font-family: outfit, Sans-serif;
@@ -100,7 +103,7 @@ margin-bottom: 20px;
 }
 .sosialmedia {
 color: antiquewhite;
-margin: 10px;
+margin: 5px;
 display: flex;
 padding: 5px 5px;
 }
@@ -126,7 +129,7 @@ margin-right: 200px;
     justify-content: center;
     color: gray;
     }
-a {
+.email {
     color: gray;
     margin-left: 10px;
 }
