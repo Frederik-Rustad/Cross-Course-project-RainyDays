@@ -64,6 +64,21 @@ body {
     height: 80px;
     width: 500px;
     }
+    .bannerimg{
+        width: 1033px;
+    }
+    .banner {
+        border: 1px solid red;
+        display: flex;    
+        margin-left: auto;
+        margin-right: auto;
+        width: 1033px;
+    }
+    .sos {
+    display: flex;
+    justify-content: center;
+    width: 1033px;
+    }
     #category, #category2 {
     display: flex;
     margin-left: auto;
