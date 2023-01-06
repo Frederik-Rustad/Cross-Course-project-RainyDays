@@ -64,20 +64,18 @@ body {
     height: 80px;
     width: 500px;
     }
-    .bannerimg{
-        width: 1033px;
-    }
-    .banner {
+    /* Urban Wear Banner*/
+    .sicons{
         border: 1px solid red;
-        display: flex;    
+        }
+    .banner{
+        display: flex;
         margin-left: auto;
         margin-right: auto;
         width: 1033px;
     }
-    .sos {
-    display: flex;
-    justify-content: center;
-    width: 1033px;
+    #bannerimg {
+        width: 1033px;
     }
     #category, #category2 {
     display: flex;
