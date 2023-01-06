@@ -90,9 +90,7 @@ body {
         margin-right: auto;
     }
     .items {
-       
-        width: 5rem;
-        height: 5rem;
+        height: 80px;
     }
     #category, #category2 {
     display: flex;
