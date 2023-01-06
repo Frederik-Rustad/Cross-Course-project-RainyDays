@@ -13,14 +13,7 @@ body {
     h1{
     font-family: outfit400;
     }
-    .sicons{
-    height: 65px;
-    width: auto;
-    position: relative;
-    top: 10px;
-    left: -400px;
-    }
-    .mainheader {
+        .mainheader {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -40,6 +33,9 @@ body {
     color: white;
     background-color: black;
     text-decoration: none;
+    }
+    #nav5 {
+    text-decoration: underline;
     }
     #nav1:hover,#nav2:hover,#nav3:hover,#nav4:hover,#nav5:hover,#nav6:hover,#nav7:hover {
     background-color: white;
@@ -63,52 +59,12 @@ body {
     margin: auto;
     height: 80px;
     width: 500px;
-    }
-    /* Urban Wear Banner*/
-   
-    .banner{
-        display: grid;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1033px;
-    }
-    #bannerimg {
-        width: 1033px;
-    }
-    .sicons{
-        border: 1px solid blue;
-       background-color: orangered;
-       display: flex;
-        }
-    #category, #category2 {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
-    width: 1033px;
-    font-family: outfit, Sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    }
-    .cattext {
-        margin-left: 5px;
-    }
+    } 
     h2 {
         margin: 2px;
         font-family: outfit, Sans-serif;
         font-size: 24px;
         font-weight: 800;
-    }
-    .cat1, .cat2, .cat3, .cat4, .cat5, .cat6 {
-    width: 320px;
-    }
-    #categoryA, #categoryB, #categoryC {
-        display: flex;
-        justify-content: space-evenly;
-        width: 1033px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
     }
     footer {
     background-color: black;
