@@ -143,3 +143,72 @@ margin-right: 200px;
     margin-left: 10px;
 }
 }
+@media only screen and (max-width:1032px) and (min-width:768px) {
+    body {
+        font-family: outfit;
+    }
+    .mainheader {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 769px;
+    }
+    .nav {
+        display: flex;
+        justify-content:space-around;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+        
+        padding: 5px 0px;
+        width: 769px;
+    }
+    #nav1:hover,#nav2:hover,#nav3:hover,#nav4:hover,#nav5:hover,#nav6:hover,#nav7:hover {
+        background-color: white;
+        box-shadow: inset 0 5px 5px 2px grey;
+        color: black;
+        }
+        #nav1,#nav2,#nav3,#nav4,#nav5,#nav6,#nav7 {  
+        padding-left: 5px;
+        padding-right: 5px;
+        color: white;
+        }
+        h2 {
+            font-size: 18px;
+        }
+   .sponsors {
+     display: flex;
+     margin-left: auto;
+     margin-right: auto;
+      width: 500px;
+     }
+     footer {
+        margin-top: 150px;
+        background-color: black;
+        color: white;
+        height: 200px;
+        }
+        .footercontent {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        }
+        li a {
+            font-family: outfit;
+            color: white;
+        }
+        .footerlogo {
+        height: 100px;
+        margin-right: 100px;
+        }
+        .copyright {
+            display: flex;
+            justify-content: center;
+            color: gray;
+            margin-top: 20px;
+            }
+        .email {
+            color: gray;
+            margin-left: 10px;
+       }
+    }
