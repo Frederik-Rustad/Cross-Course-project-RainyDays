@@ -1,3 +1,6 @@
+/*Desktop styles*/
+@media only screen and (min-width:1033px) {
+
 body {
 display: grid;
 grid-gap: 1em;
@@ -62,7 +65,6 @@ align-content: center;
 justify-content: center;
 margin: auto;
 height: 80px;
-width: 500px;
 }
 #category, #category2 {
 display: flex;
@@ -140,8 +142,4 @@ margin-right: 200px;
     color: gray;
     margin-left: 10px;
 }
-
-/*Desktop styles*/
-@media only screen and (min-width:769px) {
-
 }

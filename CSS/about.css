@@ -1,3 +1,7 @@
+
+/*Desktop styles*/
+ @media only screen and (min-width:1032px) {
+    
 body {
     display: grid;
     grid-gap: 1em;
@@ -34,9 +38,7 @@ body {
     background-color: black;
     text-decoration: none;
     }
-    #nav5 {
-    text-decoration: underline;
-    }
+    
     #nav1:hover,#nav2:hover,#nav3:hover,#nav4:hover,#nav5:hover,#nav6:hover,#nav7:hover {
     background-color: white;
     box-shadow: inset 0 5px 5px 2px grey;
@@ -142,7 +144,132 @@ body {
         color: gray;
         margin-left: 10px;
     }
-    /*Desktop styles*/
-    @media only screen and (min-width:769px) {
-    
+    /*Contact page*/
+    .contactsection {
+        
+        margin-left: auto;
+        margin-right: auto;
     }
+    }
+
+
+    /*destop to tablet*/
+
+
+
+    @media only screen and (max-width:1032px) and (min-width:768px) {
+    body {
+        font-family: outfit;
+    }
+    .mainheader {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 769px;
+    }
+    .nav {
+        display: flex;
+        justify-content:space-around;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+        
+        padding: 5px 0px;
+        width: 769px;
+    }
+    #nav1:hover,#nav2:hover,#nav3:hover,#nav4:hover,#nav5:hover,#nav6:hover,#nav7:hover {
+        background-color: white;
+        box-shadow: inset 0 5px 5px 2px grey;
+        color: black;
+        }
+        #nav1,#nav2,#nav3,#nav4,#nav5,#nav6,#nav7 {  
+        padding-left: 5px;
+        padding-right: 5px;
+        color: white;
+        }
+        h2 {
+            font-size: 18px;
+        }
+.house{
+ font-size: 12px;
+}
+#aboutsection {
+  display: grid;
+  width: 769px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 1fr 2fr;
+  width: 769px;
+}
+.sponsors {
+display: flex;
+margin-left: auto;
+margin-right: auto;
+ width: 500px;
+}
+.item {
+ margin-left: 10px;
+ }
+.aboutbanner {
+ display: flex;
+ margin-left: auto;
+ margin-right: auto;
+ width: 769px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+#abouttestimonials{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 769px;
+}
+.profile {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    height: 175px;
+    display: flex;
+    margin: 10px;
+}
+#signature{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    }
+footer {
+ margin-top: 150px;
+ background-color: black;
+ color: white;
+ height: 200px;
+ }
+ .footercontent {
+ display: flex;
+ justify-content: center;
+ align-content: space-around;
+ }
+ li a {
+     font-family: outfit;
+     color: white;
+ }
+ .footerlogo {
+ height: 100px;
+ margin-right: 100px;
+ }
+ .copyright {
+     display: flex;
+     justify-content: center;
+     color: gray;
+     margin-top: 20px;
+     }
+ .email {
+     color: gray;
+     margin-left: 10px;
+}
+}
