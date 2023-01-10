@@ -185,6 +185,7 @@ body {
     }
     .hours {
         width: 450px;
+        margin-left: -15px;
     }
     .itemC2 {
     
@@ -204,6 +205,7 @@ body {
     }
     .itemC4 {
         display: flex;
+        justify-content: center;       
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
@@ -237,18 +239,13 @@ body {
         border: 4px solid #504d4d;
         margin-left: 900px;
     }
-    
-
-    }
-
-
+     
+}
     /*destop to tablet*/
-
-
 
     @media only screen and (max-width:1032px) and (min-width:768px) {
     body {
-        font-family: outfit;
+        font-family: outfit, Sans-serif;
     }
     .mainheader {
         display: flex;
@@ -332,6 +329,90 @@ margin-right: auto;
     margin-right: auto;
 
     }
+/*contact section*/
+.contactsection {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 769px;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 50px;
+}
+.itemC1, .itemC2, .itemC3, .itemC4, .itemCA {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #504d4d    
+    }
+    .itemC1, .itemCA {
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+        height: 212px;
+        font-family: outfit, Sans-serif;
+        font-size: 18px;
+        background-color: #EDEDED;
+    }
+    .itemCA{
+        height: 150px;
+    }
+    .textC1{
+        margin-left: 20px;
+    }
+.hours{
+    width: 350px;
+    margin-left: -50px;
+}
+.itemC3 {
+    margin: 15px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 769px;
+}
+    #conbanner {
+        display: flex;
+        justify-content: center;
+        width: 769px;            
+    }
+    .itemC4 {
+        display: flex;
+        justify-content: center;       
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 769px;
+        height: 500px;
+        background: #EDEDED;
+        font-size: 18px;
+        
+    }
+    input {
+        font-family: outfit, Sans-serif;
+        font-size: 24px;
+        width: 440px;
+        height: 50px;
+        border: 4px solid grey;        
+        margin: 10px;
+    }
+    #message {
+        width: 600px;
+        height: 80px;
+    }
+    .buttonsend {
+        width: 90px;
+        display: flex;
+        justify-content: center;
+    }
+    .send{
+        font-weight: 800;
+        color: white;
+        background: #504d4d;
+        border: 4px solid #504d4d;
+        margin-left: 680px;
+    }
+    
+/*Footer*/
 footer {
  margin-top: 150px;
  background-color: black;
@@ -361,4 +442,4 @@ footer {
      color: gray;
      margin-left: 10px;
 }
-}
+} /*MEDIA BRACKET*/
