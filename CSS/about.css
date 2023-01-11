@@ -110,7 +110,7 @@ body {
         margin: 2px;
         font-family: outfit, Sans-serif;
         font-size: 24px;
-        font-weight: 600;
+        font-weight: 800;
     }
     h3 {
         margin: 2px;
@@ -425,7 +425,7 @@ footer {
  align-content: space-around;
  }
  li a {
-     font-family: outfit;
+    font-family: outfit, Sans-serif;
      color: white;
  }
  .footerlogo {
