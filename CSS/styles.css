@@ -225,7 +225,13 @@ h4{
    
     
 
-
+.terms {
+    display: flex;
+    width: 1033px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
 
 /*Footer*/
 footer {
