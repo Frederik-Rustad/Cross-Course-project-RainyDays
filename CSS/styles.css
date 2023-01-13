@@ -58,6 +58,7 @@ justify-content: center;
 margin: auto;
 height: 80px;
 }
+/*Homepage*/
 #category, #category2 {
 display: flex;
 margin-left: auto;
@@ -69,7 +70,7 @@ font-size: 18px;
 font-weight: 400;
 }
 .cattext {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 h2 {
     margin: 2px;
@@ -79,18 +80,20 @@ h2 {
 }
 .cat1, .cat2, .cat3, .cat4, .cat5, .cat6 {
 width: 320px;
+margin-bottom: 10px;
 }
 .cat1:hover, .cat2:hover, .cat3:hover, .cat4:hover, .cat5:hover, .cat6:hover {
 width: 320px;
 background-color: #ff7b00;
 color: white;
 }
-#categoryA, #categoryB {
+#categoryA, #categoryB, #categoryC {
     display: flex;
     justify-content: space-evenly;
     width: 1033px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }
 .banner {
 display: flex;
@@ -108,12 +111,39 @@ margin: 5px;
 display: flex;
 padding: 5px 5px;
 }
+ /* Urban Wear Banner*/
+   
+ .banner{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1033px;
+}
+#bannerimg {
+    width: 1033px;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+.sosialmedia{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 1033px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.items {
+    height: 80px;
+}
 /*Checkout*/
 .mainC {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: 1fr;
-    column-gap: 20px;
+    column-gap: 25px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -169,7 +199,6 @@ padding: 5px 5px;
     font-family: outfit, Sans-serif;
     font-size: 28px;
     font-weight: 400;
-    
 }
 .deliveryinfo {
     display: flex;
@@ -251,34 +280,6 @@ h4 {
     margin-left: auto;
     margin-right: auto;
 }
-/*Footer*/
-footer {
-background-color: black;
-color: white;
-height: 230px;
- }
-.footercontent {
-display: flex;
-justify-content: center;
-align-content: space-around;
- }
-li a {
-    font-family: outfit;
-    color: white;
- }
-.footerlogo {
-margin-right: 200px;
- }
-.copyright {
-    display: flex;
-    justify-content: center;
-    color: gray;
-    }
-.email {
-    color: gray;
-    margin-left: 10px; 
-  }
-
 /*about section*/
 
     #aboutsection {
@@ -329,6 +330,7 @@ margin-right: 200px;
         height: 200px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 15px;
     }
   
 /*Contact page*/
@@ -384,9 +386,7 @@ margin-right: 200px;
     #conbanner {
         display: flex;
         justify-content: center;
-        width: 1033px;
-        margin-left: -14px;
-        
+        width: 1033px;      
     }
     .itemC4 {
         display: flex;
@@ -423,6 +423,33 @@ margin-right: 200px;
         border: 4px solid #504d4d;
         margin-left: 900px;
     }
+    /*Footer*/
+footer {
+    background-color: black;
+    color: white;
+    height: 230px;
+     }
+    .footercontent {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+     }
+    li a {
+        font-family: outfit;
+        color: white;
+     }
+    .footerlogo {
+    margin-right: 200px;
+     }
+    .copyright {
+        display: flex;
+        justify-content: center;
+        color: gray;
+        }
+    .email {
+        color: gray;
+        margin-left: 10px; 
+      }
 } /*media bracket*/
 
 
@@ -511,8 +538,7 @@ margin-right: 200px;
        margin-right: auto;
         width: 500px;
        }
-       .item{
-        
+       .itemA{
         margin-left: 10px;
         }
         .house{
@@ -548,7 +574,6 @@ margin-right: 200px;
            height: 100px;
            margin-left: auto;
            margin-right: auto;
-       
            }
 /*contact section*/
 .contactsection {
