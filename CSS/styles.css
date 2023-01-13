@@ -2,16 +2,8 @@
 @media only screen and (min-width:1033px) {
 
 body {
-display: grid;
-grid-gap: 1em;
-grid-template-areas:
-'nav nav nav'
-'.brandlogos'
-'.cat1 .cat2 .cat3'
-'banner'
-'.cat4 .cat5 .cat6'
-'footer'
-;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1{
  font-family: outfit400, Sans-serif;
@@ -154,6 +146,37 @@ padding: 5px 5px;
 .checkoutsummary{
     height: 600px;
 }
+.Ordersummary{
+    display: flex;
+    justify-content: center;
+}
+.priceinfo{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.Orderdet{
+    font-size: 18px;
+}
+.Orderprice {
+    display: flex;
+    justify-content: end;
+    font-weight: bold;
+    font-size: 18px;
+}
+.Ordertotal{
+    display: flex;
+    font-family: outfit, Sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    
+}
+.deliveryinfo {
+    display: flex;
+    justify-content: center;
+    font-family: Hanuman, Sans-serif;
+    margin-top: 15px;
+}
 /*Jacket Specific item*/
 .mainitem{
     display: grid;
@@ -212,19 +235,16 @@ h4{
     .cta:hover {
         background-color: #ff8b43
     }
-    
-    .cart{
-        margin: 0 0;
-          }
+.cart{
+ margin: 0 0;
+ }
 .descriptiontext{
     width: 450px;
     font-family: 'Hanuman', serif;
     font-size: 14px;
     margin-top: 10px;
 }
-   
-    
-
+/*Terms of use page*/
 .terms {
     display: flex;
     width: 1033px;
@@ -232,7 +252,6 @@ h4{
     margin-right: auto;
 }
 }
-
 /*Footer*/
 footer {
 background-color: black;
