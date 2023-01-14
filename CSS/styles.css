@@ -514,6 +514,9 @@ footer {
     .cattext {
       margin-left: 5px;
     }
+    h1{
+        font-family: outfit400, Sans-serif;
+       }
     h2 {
         margin: 2px;
         font-family: outfit, Sans-serif;
@@ -652,7 +655,106 @@ footer {
            margin-left: auto;
            margin-right: auto;
            }
-/*contact section T*/
+ /* Urban Wear Banner T*/
+   
+ .banner{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 768px;
+}
+#bannerimg {
+    width: 768px;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+.sosialmedia{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 768px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.items {
+    height: 50px;
+}
+/*Checkout T*/
+.mainC {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 25px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-family: outfit, Sans-serif;
+    width: 768px;
+    }
+.checkoutitem, .checkoutsummary{
+    background-color: #D9D9D9;
+    border-radius: 5px;
+}
+.checkoutitem{
+    display: flex;
+    align-items: center;
+    font-family: Hanuman;
+    font-size: 18px;
+    height: 200px;
+}
+.checkoutitem1 {
+    height: 180px;
+    margin: 0px 10px;
+}
+.remove {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 5px;
+    font-size: 10px;
+    color: black;
+    width: 80px;
+}
+.checkoutsummary{
+    height: 600px;
+}
+.Ordersummary{
+    display: flex;
+    justify-content: center;
+}
+.priceinfo{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.Orderdet{
+    font-size: 18px;
+}
+.Orderprice {
+    display: flex;
+    justify-content: end;
+    font-weight: bold;
+    font-size: 18px;
+}
+.Ordertotal{
+    display: flex;
+    font-family: outfit, Sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+.deliveryinfo {
+    display: flex;
+    justify-content: center;
+    font-family: Hanuman, Sans-serif;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+           /*contact section T*/
+
 .contactsection {
     display: grid;
     margin-left: auto;
