@@ -482,9 +482,17 @@ footer {
         padding-left: 5px;
         padding-right: 5px;
         color: white;
+        text-decoration: none;
         }
         h2 {
          font-size: 18px;
+        }
+        .brandspace{
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 768px;
         }
    .sponsors {
      display: flex;
@@ -492,8 +500,77 @@ footer {
      margin-right: auto;
       width: 500px;
      }
+/*Homepage T */
+    #category, #category2 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    width: 768px;
+    font-family: outfit, Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    }
+    .cattext {
+      margin-left: 5px;
+    }
+    h2 {
+        margin: 2px;
+        font-family: outfit, Sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .cat1, .cat2, .cat3, .cat4, .cat5, .cat6 {
+    width: 220px;
+    margin-bottom: 10px;
+    }
+    .cat1:hover, .cat2:hover, .cat3:hover, .cat4:hover, .cat5:hover, .cat6:hover {
+    width: 220px;
+    background-color: #ff7b00;
+    color: white;
+    }
+    .catimg {
+        width: 220px;
+    }
+    #categoryA, #categoryB, #categoryC {
+        display: flex;
+        justify-content: space-evenly;
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .banner {
+    display: flex;
+    align-content:  center;
+    justify-content: space-between;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    .bannerimg{
+        width: 768px;
+        height: 100px;
+    }
+    .sosialmedia {
+    color: antiquewhite;
+    margin: 5px;
+    display: flex;
+    
+    padding: 5px 5px;
+    }
+    .sicons{
+        height: 50px;
+        width: auto;
+        position: relative;
+        top: 20px;
+        left: -280px;
+        }
+     /*Footer T */
      footer {
-        margin-top: 150px;
+        margin-top: 50px;
         background-color: black;
         color: white;
         height: 200px;
@@ -521,7 +598,7 @@ footer {
             color: gray;
             margin-left: 10px;
        }
-       /*About section*/
+       /*About section T*/
        
        #aboutsection {
          display: grid;
@@ -575,7 +652,7 @@ footer {
            margin-left: auto;
            margin-right: auto;
            }
-/*contact section*/
+/*contact section T*/
 .contactsection {
     display: grid;
     margin-left: auto;
