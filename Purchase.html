@@ -38,16 +38,26 @@
 <!--Checkout main section
  Left side-->
 <div class="mainC">
-  <div class="checkoutitem"> 
-    <div> <img src="images/item1.jpg" alt="Patagonia Jacket" class="checkoutitem1"></div>
-    <div><h1>Patagonia</h1>Industrial Green Hiking Jacket.<br><h1>50$</h1></div>
-   <div class="remove"> <a href="empty_checkout.html" aria-multiline="Remove Item" class="remove">Remove item</a> </div>
+    
+  <div class="checkoutitem">
+    
+    <form method="get">
+        <div class="nameform">
+            <input type="text" name="name" id="name" value="Full Name"></div><div class="nameform">
+                <input type="text" name="name" id="name" value="Last Name"></div>
+        <div class="emailform">
+          <input type="email" name="email" id="email" value="Email"></div>
+  <div> 
+</div>
+    
+   <div></div>
   </div>
   
   <!--Ordersummary
   Right side-->
   <div class="checkoutsummary">
-  <div class="Ordersummary"><h2>Order Summary</h2></div>
+  <div class="purchasesummary"><img src="images/item1.jpg" alt="Patagonia Jacket" class="checkoutitem1"><div><h1>Patagonia</h1>Industrial Green Hiking Jacket.<br><h1>50$</h1></div></div>
+  
    <div class="priceinfo">  
   
     <div class="Orderdet">
@@ -60,19 +70,15 @@
      <div class="Ordertotal"> Order Total: </div>
      <div class="Ordertotal"><b>69$</b></div>
   </div>
-  <div class="deliveryinfo">
-    <img src="images/truck.png"> Delivery estimated 3 / 5 workdays
-  </div>
-  <div class="Ordersummary"><h2><u>Payment methods</u></h2></div>
   <form class="payment">
-    <div>
-      <div><input type="radio" id="PayPal" name="payment" value="payment"/> <img src="images/Checkout/paypal.png"></div>
+    <div class="delivery">
+      <div><input type="radio" id="delivery" name="delivery" value="delivery"/> <img src="images/truck.png">Delivery estimated 3 / 5 workdays</div>
       
-      <div><input type="radio" id="Visa" name="payment" value="payment"/><img src="images/Checkout/visa.png"><img src="images/Checkout/mastercard.png"></div>
+      <div><input type="radio" id="delivery" name="delivery" value="delivery"/><img src="images/Checkout/pony.png">Delivery estimated 30 / 45 workdays</div>
     </div>
     <div>By continuing you agree to the<a href="Terms_of_use.html" class="Terms_of_use" >Terms of use</a></div>
-    <button class="cta" id="buy" type="button">
-      <a href="Purchase.html" class="buy">Buy</a>
+    <button class="cta" id="CompleteOrder" type="button">
+    complete order
  </button>
     </div>
   </form>
@@ -88,17 +94,17 @@
     <div class="contact">
     <ul>
       <h2>Contact</h2>
-      <li><a href="contact.html" class="contact" id="OpeningHours">Opening Hours</a></li>
-      <li><a href="contact.html" class="contact" id="CustomerSupport">Customer Support</a></li>
-      <li><a href="contact.html" class="contact" id="VisitingAddress">Visiting address</a></li>
+      <li><a href="contact.html" class="contact" id="Opening Hours">Opening Hours</a></li>
+      <li><a href="contact.html" class="contact" id="Customer Support">Customer Support</a></li>
+      <li><a href="contact.html" class="contact" id="Visiting address">Visiting address</a></li>
     </ul>
     </div>
     <div class="about">
       <ul>
         <h2>About us</h2>
-        <li><a href="about.html" class="aboutus" id="OurWarehouses">Our warehouses</a></li>
-        <li><a href="about.html" class="aboutus" id="Sponsors">Sponsors</a></li>
-        <li><a href="about.html" class="aboutus" id="Comfort Zone">Comfort Zone</a></li>
+        <li><a href="about.html" class="about us" id="Our warehouses">Our warehouses</a></li>
+        <li><a href="about.html" class="about us" id="Sponsors">Sponsors</a></li>
+        <li><a href="about.html" class="about us" id="Comfort Zone">Comfort Zone</a></li>
       </ul>
       </div>
     

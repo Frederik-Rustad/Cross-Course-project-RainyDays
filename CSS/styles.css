@@ -175,7 +175,8 @@ padding: 5px 5px;
     color: black;
 }
 .checkoutsummary{
-    height: 600px;
+    height: auto;
+    padding: 10px 10px;
 }
 .Ordersummary{
     display: flex;
@@ -207,6 +208,43 @@ padding: 5px 5px;
     font-family: Hanuman, Sans-serif;
     margin-top: 15px;
 }
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: auto;
+}
+#PayPal, #Visa  {
+    width: 30px;
+}
+#delivery{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 25px;
+}
+#buy, #CompleteOrder{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 32px; 
+    margin-top: 20px; 
+    width: fit-content;
+   }
+   .buy{
+    color: white;
+    text-decoration: none;
+   }
+   /*purchase page*/
+   .purchasesummary{
+    display: flex;
+   }
+   .delivery {
+    display: flex;
+    flex-direction: column;
+   }
 /*Jacket Specific item*/
 .mainitem{
     display: grid;
@@ -259,7 +297,7 @@ h4 {
         text-align: center;
         color: #fff;
         border-radius: 30px;
-        width: 200px;
+        width: auto;
         background-color: #ff7b00
     }
     .cta:hover {
