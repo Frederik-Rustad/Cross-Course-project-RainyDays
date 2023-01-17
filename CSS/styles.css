@@ -181,6 +181,8 @@ padding: 5px 5px;
 .Ordersummary{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .priceinfo{
     margin-top: 10px;
@@ -244,6 +246,15 @@ padding: 5px 5px;
    .delivery {
     display: flex;
     flex-direction: column;
+   }
+   .purchaseform{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 40px 0px 20px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    width: auto;
    }
 /*Jacket Specific item*/
 .mainitem{
@@ -641,8 +652,16 @@ footer {
             color: gray;
             margin-left: 10px;
        }
+
+        /*jacket list pages*/
+
+        .itemlist, .cattext {
+            width: 220px;
+            font-size: 14px;
+        }
+
        /*About section T*/
-       
+
        #aboutsection {
          display: grid;
          width: 769px;
@@ -690,11 +709,12 @@ footer {
        #signature{
            display: flex;
            justify-content: center;
-           width: 200px;
-           height: 100px;
+           width: 100px;
+           height: 200px;
            margin-left: auto;
            margin-right: auto;
            }
+          
  /* Urban Wear Banner T*/
    
  .banner{
@@ -745,6 +765,7 @@ footer {
     font-family: Hanuman;
     font-size: 18px;
     height: 200px;
+    
 }
 .checkoutitem1 {
     height: 180px;
@@ -757,13 +778,60 @@ footer {
     font-size: 10px;
     color: black;
     width: 80px;
+    text-decoration: underline;
 }
 .checkoutsummary{
     height: 600px;
+    width: 300px;
 }
 .Ordersummary{
     display: flex;
     justify-content: center;
+    
+}
+#PayPal, #Visa {
+    width: 30px;
+}
+.ToU {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+.payment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#buy, #CompleteOrder {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    margin-top: 20px;
+    width: fit-content;
+}
+.cta {
+    border: 0;
+    line-height: 1.2;
+    padding: 5px 15px;
+    margin: 5px;
+    font-size: 1.5rem;
+    font-family: outfit, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+    width: auto;
+    background-color: #ff7b00;
+}
+.Terms_of_use{
+    color: purple;
+    text-decoration: underline;
+}
+a {
+    color: white;
+    text-decoration: none;
 }
 .priceinfo{
     margin-top: 10px;
