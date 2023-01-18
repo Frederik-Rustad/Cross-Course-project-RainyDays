@@ -739,9 +739,12 @@ h4 {
        .itemA{
         margin-left: 10px;
         }
-        .house{
+        .house {
+            margin-top: 20px;
+            margin-left: 8px;
+            font-family: outfit, sans-serif;
             font-size: 12px;
-           }
+        }
        .aboutbanner {
         display: flex;
         margin-left: auto;
@@ -950,6 +953,16 @@ a {
 .purchasesummary{
     display: flex;
    }
+   .cta{
+    filter: drop-shadow(0px 3px 0px #3d3d3d);
+   }
+   .cta:hover {
+   
+   }
+   .cta:active{
+    box-shadow: inset 0 5px 5px 2px rgb(202, 84, 5);
+    filter:none
+   }
            /*contact section T*/
 
 .contactsection {
@@ -980,6 +993,11 @@ a {
     }
     .textC1{
         margin-left: 20px;
+    }
+    .textcon{
+        font-family: outfit, sans-serif;
+        font-size: 20px;
+        margin-top: 10px;
     }
 .hours{
     width: 350px;
