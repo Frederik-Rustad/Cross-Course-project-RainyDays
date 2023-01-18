@@ -742,6 +742,7 @@ h4 {
         .house {
             margin-top: 20px;
             margin-left: 8px;
+            margin-right: 10px;
             font-family: outfit, sans-serif;
             font-size: 12px;
         }
@@ -833,6 +834,7 @@ h4 {
     height: 120px;
     margin-top: 10px;
     margin-left: 10px;
+    margin-right: 20px;
 }
 .remove {
     display: flex;
@@ -944,6 +946,9 @@ a {
     background-color: #D9D9D9;
     border-radius: 5px;
     width: 350px;
+   }
+   .checkoutsummary{
+    margin-right: 10px;
    }
  
 #CompleteOrder{
