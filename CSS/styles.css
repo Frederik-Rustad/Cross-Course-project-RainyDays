@@ -1068,11 +1068,45 @@ header, nav, main, footer {
     display: grid;
     place-content: center;
 }
+nav, .footercontent, .copyright {
+    display: none
+ /*hidden  for now */}
 .brandspace{
     display: grid;
     place-content: center;
 }
 .sponsors {
     width: 300px;
+}
+.category, .category2 {
+    display: flex;
+    align-content: center;
+}
+.cattext {
+    font-family: outfit, Sans-serif;
+    width: 320px;
+    margin-bottom: 15px;
+}
+.banner {
+    display: none;
+}
+.mobile_footer{
+    width: 360px;
+    height: 67px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    background-color:#303030 ;
+    color: #A9B0A4;
+}
+.footermedia{
+    display: flex;
+    align-items: center;
+}
+.sicons{
+    margin-top: 10px;
+    width: 40px;
 }
     } /*media bracket*/
