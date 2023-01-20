@@ -482,6 +482,9 @@ h4 {
         margin-left: 900px;
     }
     /*Footer*/
+    .mobile_footer{
+        display: none;
+    }
 footer {
     background-color: black;
     color: white;
@@ -1060,6 +1063,10 @@ a {
         border: 4px solid #504d4d;
         margin-left: 680px;
     }
+    /*Footer T*/
+    .mobile_footer{
+        display: none;
+    }
     }/*media bracket*/
 
     @media only screen and (max-width:768px) {
@@ -1071,22 +1078,49 @@ header, nav, main, footer {
 nav, .footercontent, .copyright {
     display: none
  /*hidden  for now */}
+ 
+ .MobileNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -10px;
+    background-color: #303030;
+    width: 360px;
+    height: 65px;
+ }
+ .slogan{
+    display: flex;
+    flex-direction: column;
+ }
 .brandspace{
     display: grid;
     place-content: center;
 }
-.sponsors {
-    width: 300px;
+body{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
-.category, .category2 {
+.sponsors {
+    width: 360px;
+}
+#category, #category2 {
+    width: 254px;
     display: flex;
-    align-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
 .cattext {
     font-family: outfit, Sans-serif;
-    width: 320px;
+    width: 254px;
     margin-bottom: 15px;
 }
+.catimg {
+    width: 254px;
+}
+.cat1, .cat2, .cat3, .cat4, .cat5, .cat6 {
+    width: 254px;
+    }
 .banner {
     display: none;
 }
@@ -1108,5 +1142,9 @@ nav, .footercontent, .copyright {
 .sicons{
     margin-top: 10px;
     width: 40px;
+}
+.copymobile{
+    font-family: outfit, Sans-serif;
+    font-size: 12px;
 }
     } /*media bracket*/
