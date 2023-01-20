@@ -1060,4 +1060,19 @@ a {
         border: 4px solid #504d4d;
         margin-left: 680px;
     }
-    }
+    }/*media bracket*/
+
+    @media only screen and (max-width:768px) {
+
+header, nav, main, footer {
+    display: grid;
+    place-content: center;
+}
+.brandspace{
+    display: grid;
+    place-content: center;
+}
+.sponsors {
+    width: 300px;
+}
+    } /*media bracket*/
