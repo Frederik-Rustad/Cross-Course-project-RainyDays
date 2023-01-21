@@ -91,9 +91,24 @@
       <div><input type="radio" id="delivery" name="delivery" value="delivery"/><img src="images/Checkout/pony.png">Delivery estimated 30 / 45 workdays</div>
     </div>
     <div class="ToU">By continuing you agree to the<a href="Terms_of_use.html" class="Terms_of_use" >Terms of use</a></div>
-    <button name="OrderButton" class="cta" id="CompleteOrder" type="button">
+    <button name="OrderButton" class="cta" id="modal-btn" type="button">
     complete order
  </button>
+ <!--Modal pop-up "Order complete!" -->
+ <div id="my-modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    <div class="suc"><img src="images/suc.png"> </div>
+      </div>
+      <div class="modal-body">
+      <button class="cta"><a href="all_jackets.html">Continue shopping</a></button>
+      <button class="cta"><a href="index.html">Go to Home page</a></button>
+    </div>
+    </div>
+  </div>
+<script src="JS/main.js"></script>
+<!--Modal pop-up "END" -->
     </div></div>
   </form>
   

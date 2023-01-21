@@ -579,6 +579,82 @@ color: gray;
 color: gray;
  margin-left: 10px; 
 }
+/*Modal popup*/
+:root {
+    --modal-duration: 1s;
+    --modal-color: #fff;
+  }
+  #modal-btn{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .modal-content 
+  {
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 30px;
+    margin: 10% auto;
+    width: 369px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+  .modal-header, .suc 
+  {
+    display:flex;
+    justify-content:center;
+    background-color: #fff;
+    padding: 10px;
+  }
+  .modal-body 
+  {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    height: auto;
+    width:369px;
+  }
+  .close 
+  {
+    color: #000;
+    float: right;
+    font-size: 30px;
+  }
+  .close:hover, .close:focus 
+  {
+    color: #3d3d3d;
+    text-decoration: none;
+    cursor: pointer;
+  }
+ a 
+ { 
+    font-family: outfit, Sans-serif;
+    color: white;
+    text-decoration: none;
+ }
+  @keyframes modalopen 
+  {
+    from 
+    {
+      opacity: 0;
+    }
+    to 
+    {
+      opacity: 1;
+    }
+  }
 } /*media bracket*/
 /* Tablet Media */
 @media only screen and (max-width:1032px) and (min-width:769px) {
