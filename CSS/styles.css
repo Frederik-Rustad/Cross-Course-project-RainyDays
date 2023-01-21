@@ -52,6 +52,10 @@ color: black;
 padding-left: 5px;
 padding-right: 5px;
 }
+#Burger_Colapsed, #my-modal
+{
+display: none;
+}
 .brandspace 
 {
 display: flex;
@@ -580,81 +584,84 @@ color: gray;
  margin-left: 10px; 
 }
 /*Modal popup*/
-:root {
-    --modal-duration: 1s;
-    --modal-color: #fff;
-  }
-  #modal-btn{
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .modal-content 
-  {
-    background-color: white;
-    padding: 20px 20px;
-    border-radius: 30px;
-    margin: 10% auto;
-    width: 369px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-    animation-name: modalopen;
-    animation-duration: var(--modal-duration);
-  }
-  .modal-header, .suc 
-  {
-    display:flex;
-    justify-content:center;
-    background-color: #fff;
-    padding: 10px;
-  }
-  .modal-body 
-  {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: #fff;
-    height: auto;
-    width:369px;
-  }
-  .close 
-  {
-    color: #000;
-    float: right;
-    font-size: 30px;
-  }
-  .close:hover, .close:focus 
-  {
-    color: #3d3d3d;
-    text-decoration: none;
-    cursor: pointer;
-  }
- a 
- { 
-    font-family: outfit, Sans-serif;
-    color: white;
-    text-decoration: none;
- }
-  @keyframes modalopen 
-  {
-    from 
-    {
-      opacity: 0;
-    }
-    to 
-    {
-      opacity: 1;
-    }
-  }
+:root
+{
+--modal-duration: 1s;
+--modal-color: #fff;
+}
+#modal-btn
+{
+margin-left: auto;
+margin-right: auto;
+}
+.modal 
+{
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content 
+{
+background-color: white;
+padding: 20px 20px;
+border-radius: 30px;
+margin: 10% auto;
+width: 369px;
+box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+animation-name: modalopen;
+animation-duration: var(--modal-duration);
+}
+.modal-header, .suc 
+{
+display:flex;
+justify-content:center;
+background-color: #fff;
+padding: 10px;
+}
+.modal-body 
+{
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+background: #fff;
+height: auto;
+width:369px;
+}
+.close 
+{
+color: #000;
+float: right;
+font-size: 30px;
+}
+.close:hover, .close:focus 
+{
+color: #3d3d3d;
+text-decoration: none;
+cursor: pointer;
+}
+a 
+{ 
+font-family: outfit, Sans-serif;
+color: white;
+text-decoration: none;
+}
+@keyframes modalopen 
+{
+from 
+{
+  opacity: 0;
+}
+to 
+{
+  opacity: 1;
+}
+}
 } /*media bracket*/
 /* Tablet Media */
 @media only screen and (max-width:1032px) and (min-width:769px) {
@@ -689,6 +696,10 @@ color: gray;
     padding-right: 5px;
     color: white;
     text-decoration: none;
+    }
+    #Burger_Colapsed
+    {
+    display: none;
     }
     h2 
     {
@@ -826,7 +837,7 @@ color: gray;
     color: gray;
     margin-left: 10px;
     }
- /*jacket list pages T*/
+/*jacket list pages T*/
     .itemlist, .cattext 
     {
     width: 220px;
@@ -969,7 +980,6 @@ color: gray;
     position: relative;
     top: 0;
     left: 0;
-
     }
     .sosialmedia
     {
@@ -1290,6 +1300,85 @@ color: gray;
     {
     display: none;
     }
+/*Modal popup*/
+    :root
+    {
+    --modal-duration: 1s;
+    --modal-color: #fff;
+    }
+    #modal-btn
+    {
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .modal 
+    {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content 
+    {
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 30px;
+    margin: 10% auto;
+    width: 369px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+    }
+    .modal-header, .suc 
+    {
+    display:flex;
+    justify-content:center;
+    background-color: #fff;
+    padding: 10px;
+    }
+    .modal-body 
+    {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    height: auto;
+    width:369px;
+    }
+    .close 
+    {
+    color: #000;
+    float: right;
+    font-size: 30px;
+    }
+    .close:hover, .close:focus 
+    {
+    color: #3d3d3d;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    a 
+    { 
+    font-family: outfit, Sans-serif;
+    color: white;
+    text-decoration: none;
+    }
+    @keyframes modalopen 
+    {
+    from 
+    {
+      opacity: 0;
+    }
+    to 
+    {
+      opacity: 1;
+    }
+    }
 }/*media bracket*/
 @media only screen and (max-width:768px) {
      header, nav, main, footer 
@@ -1311,6 +1400,50 @@ color: gray;
      width: 360px;
      height: 65px;
      }
+     #Burger_Colapsed
+     {
+     background-color: #303030;
+     }
+     :root {
+        --modal-duration: 1s;
+        --modal-color: #fff;
+      }
+      
+      body {
+        height: 100vh;
+      }
+      .cta {
+        background: #ff7b00;
+        padding:  5px 15px;
+        color: #fff;
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+      }
+      .modal-content 
+      {
+        margin-top: 200px;
+        position: absolute;
+        display:flex;
+        flex-direction:column;
+        align-items: flex-end;
+        margin-right: auto;
+        width: 100%;
+      }
+      .close 
+      {
+      display:none;
+      }
      .slogan{
      display: flex;
      flex-direction: column;
@@ -1349,7 +1482,12 @@ color: gray;
      }
      .cat1, .cat2, .cat3, .cat4, .cat5, .cat6 
      {
+        margin-top: 20px;
      width: 254px;
+     height: 350px;
+     }
+     h2 {
+        line-height: 0em;
      }
      .banner 
      {
@@ -1379,6 +1517,7 @@ color: gray;
      }
      .copymobile
      {
+        margin-top: 6px;
      font-family: outfit, Sans-serif;
      font-size: 12px;
      }
