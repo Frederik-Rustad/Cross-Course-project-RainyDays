@@ -52,7 +52,7 @@ color: black;
 padding-left: 5px;
 padding-right: 5px;
 }
-#Burger_Colapsed, #my-modal
+#Burger_Colapsed, #my-modal, .modal-content
 {
 display: none;
 }
