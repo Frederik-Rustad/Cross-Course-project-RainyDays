@@ -1777,9 +1777,7 @@ font-family: 'Hanuman', serif;
 font-size: 14px;
 margin-top: 10px;
 }
-.modal-content{
-  display: none;
-}
+
 /*checkout M*/
 .mainC{
   display: flex;
@@ -1867,7 +1865,7 @@ filter:none
      font-family: outfit, Sans-serif;
      font-size: 12px;
      }
-     /*Modal popup*/
+    /*Modal popup*/
     :root
     {
     --modal-duration: 1s;
@@ -1877,6 +1875,9 @@ filter:none
     {
     margin-left: auto;
     margin-right: auto;
+    }
+    .moddev{
+      width: 320px;
     }
     .modal 
     {
@@ -1896,7 +1897,7 @@ filter:none
     padding: 20px 20px;
     border-radius: 30px;
     margin: 10% auto;
-    width: 369px;
+    width: 360px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
     animation-name: modalopen;
     animation-duration: var(--modal-duration);
@@ -1915,7 +1916,7 @@ filter:none
     justify-content: space-between;
     background: #fff;
     height: auto;
-    width:369px;
+    width:360px;
     }
     .close 
     {
