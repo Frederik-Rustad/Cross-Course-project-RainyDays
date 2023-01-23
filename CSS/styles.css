@@ -299,6 +299,9 @@ filter: drop-shadow(0px 3px 0px #3d3d3d);
 box-shadow: inset 0 5px 5px 2px rgb(202, 84, 5);
 filter:none
 }
+.moddev{
+  width: 340px;
+}
 /*Jacket Specific item*/
 .mainitem
 {
@@ -1182,6 +1185,9 @@ to
     box-shadow: inset 0 5px 5px 2px rgb(202, 84, 5);
     filter:none
     }
+    .moddev{
+      width: 340px;
+    }
 /*contact section T*/
     .contactsection 
     {
@@ -1706,7 +1712,7 @@ align-items: center;
 margin-top: 50px;
 margin-left: auto;
 margin-right: auto;
-margin-bottom: 50px;
+margin-bottom: 10px;
 font-family: outfit, Sans-serif;
 width: 360px;
 }
@@ -1774,6 +1780,63 @@ margin-top: 10px;
 .modal-content{
   display: none;
 }
+/*checkout M*/
+.mainC{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: outfit, sans-serif;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.checkoutitem{
+  background-color: #D9D9D9;
+  padding: 15px;
+}
+.checkoutsummary{
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.priceinfo, .deliveryinfo, .Ordersummary, .cards{
+  display: none;
+}
+a {
+  text-decoration: none;
+  font-family: outfit, Sans-serif;
+}
+.remove{
+  color: #000;
+}
+.remove:hover{
+  color: rgb(66, 66, 66);
+}
+.buy{
+  color: white;
+}
+/*Purchase page M */
+.checkoutsummary{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.delivery {
+  width: 360px;
+}
+#delivery{
+  width: 30px;
+}
+.cta:active
+{
+box-shadow: inset 0 5px 5px 2px rgb(202, 84, 5);
+filter:none
+}
      /*mobile footer*/
      .mobile_footer
      {
@@ -1798,11 +1861,89 @@ margin-top: 10px;
      margin-top: 10px;
      width: 40px;
      }
-     .copymobile
+     .copymobrchile
      {
         margin-top: 6px;
      font-family: outfit, Sans-serif;
      font-size: 12px;
      }
-
+     /*Modal popup*/
+    :root
+    {
+    --modal-duration: 1s;
+    --modal-color: #fff;
+    }
+    #modal-btn
+    {
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .modal 
+    {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content 
+    {
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 30px;
+    margin: 10% auto;
+    width: 369px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+    }
+    .modal-header, .suc 
+    {
+    display:flex;
+    justify-content:center;
+    background-color: #fff;
+    padding: 10px;
+    }
+    .modal-body 
+    {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    height: auto;
+    width:369px;
+    }
+    .close 
+    {
+    color: #000;
+    float: right;
+    font-size: 30px;
+    }
+    .close:hover, .close:focus 
+    {
+    color: #3d3d3d;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    a 
+    { 
+    font-family: outfit, Sans-serif;
+    color: white;
+    text-decoration: none;
+    }
+    @keyframes modalopen 
+    {
+    from 
+    {
+      opacity: 0;
+    }
+    to 
+    {
+      opacity: 1;
+    }
+    }
      } /*media bracket*/
