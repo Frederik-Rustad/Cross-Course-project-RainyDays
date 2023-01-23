@@ -52,7 +52,7 @@ color: black;
 padding-left: 5px;
 padding-right: 5px;
 }
-#Burger_Colapsed, #my-modal, .modal-content
+#Burger_Colapsed
 {
 display: none;
 }
@@ -662,6 +662,9 @@ to
   opacity: 1;
 }
 }
+#MobileMenu, #nav-toggle {
+  display: none;
+ }
 } /*media bracket*/
 /* Tablet Media */
 @media only screen and (max-width:1032px) and (min-width:769px) {
@@ -1294,9 +1297,6 @@ to
     border: 4px solid #504d4d;
     margin-left: 680px;
     }
-    .modal-content{
-      display: none;
-    }
 
 /*Footer T*/
     .mobile_footer
@@ -1382,6 +1382,9 @@ to
       opacity: 1;
     }
     }
+ #MobileMenu, #nav-toggle {
+  display: none;
+ }
 }/*media bracket*/
 @media only screen and (max-width:768px) {
      header, nav, main, footer 
@@ -1389,28 +1392,68 @@ to
      display: grid;
      place-content: center;
      }
-     nav, .footercontent, .copyright
+     .footercontent, .copyright, .topnav
      {
      display: none
-     /*hidden for now */}
+     /*hidden for now */
+    }
      .MobileNav
      {
+    position: relative;
      display: flex;
-     justify-content: space-around;
+     justify-content: space-between;
      align-items: center;
      margin-top: -10px;
      background-color: #303030;
      width: 360px;
      height: 65px;
      }
+     .slogan{
+      position: absolute;
+      margin-left: 70px;
+     }
+     .Home_icon{
+      margin-left: 1em;
+     }
      #Burger_Colapsed
      {
      background-color: #303030;
      }
-     :root {
-      --modal-duration: 1s;
-      --modal-color: #fff;
-      }
+          /*button experiment*/
+#BurgerMenu{
+  background-color: #303030;
+}
+ul{
+  list-style: none;
+  padding-inline-start: 0px
+}
+.nav-toggle{
+  display: none;
+}
+.nav-toggle-lable{
+  margin-right: 1em;
+}
+#MobileMenu{
+  margin-top: 380px;
+  z-index: 9999;
+}
+nav {
+display: none;
+ padding: 0%;
+ background-color: #303030;
+ width: 180px;
+}
+nav ul li {
+  z-index: 999;
+}
+.nav-toggle:checked ~ nav {
+  display: block;
+}
+.nav-toggle-icon{
+  background-color: #303030;
+}
+
+     /*button experiment END*/
       body {
         height: 100vh;
       }
@@ -1422,31 +1465,7 @@ to
       border-radius: 30px;
       cursor: pointer;
       }
-      .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        overflow: auto;
-      }
-      .modal-content 
-      {
-        line-height: 0em;
-        margin-top: 200px;
-        position: absolute;
-        display:flex;
-        flex-direction:column;
-        align-items: flex-end;
-       
-        width: 100%;
-      }
-      .close 
-      {
-      display:none;
-      }
+
      .slogan{
      display: flex;
      flex-direction: column;
@@ -1563,7 +1582,6 @@ to
      {
      height: 100px;
      }
-     
 /*contact section M*/
      .contactsection 
      {
@@ -1669,7 +1687,6 @@ to
      .buttonsend 
      {
      width: 90px;
-     
      }
      .send
      {
@@ -1679,6 +1696,85 @@ to
      border: 4px solid #504d4d;
      width: 90px;
      }
+     
+/*Jacket Specific item*/
+.mainitem, .itemdescription
+{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
+font-family: outfit, Sans-serif;
+width: 360px;
+}
+.jacket
+{
+width: 255px;
+}
+.logoitem
+{
+display: none;
+}
+.price
+{
+margin-top: -50px;
+}
+p
+{
+font-family: 'Hanuman', serif;
+font-weight: 400;
+font-size: 24px;
+margin-top: -30px;
+}
+h3
+{
+margin-top: -6px;
+font-family: 'Hanuman', serif;
+font-size: 32px;
+}
+h4 
+{
+font-family: outfit, Sans-serif;
+font-size: 36px;
+margin-bottom: 10px;
+}
+.cta
+{
+display: flex;
+justify-content: center;
+align-content: center; 
+border: 0;
+line-height: 1.2;
+padding: 5px 15px;
+margin: 5px;
+font-size: 1.5rem;
+font-family: outfit, sans-serif;
+font-weight: 600;
+text-align: center;
+color: #fff;
+border-radius: 30px;
+width: auto;
+background-color: #ff7b00
+}
+.cta:hover 
+{
+background-color: #ff8b43
+}
+
+.descriptiontext
+{
+width: 350px;
+font-family: 'Hanuman', serif;
+font-size: 14px;
+margin-top: 10px;
+}
+.modal-content{
+  display: none;
+}
+     /*mobile footer*/
      .mobile_footer
      {
      width: 360px;
@@ -1708,4 +1804,5 @@ to
      font-family: outfit, Sans-serif;
      font-size: 12px;
      }
+
      } /*media bracket*/
