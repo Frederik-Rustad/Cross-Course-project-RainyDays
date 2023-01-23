@@ -1303,7 +1303,11 @@ to
     border: 4px solid #504d4d;
     margin-left: 680px;
     }
-
+    .terms{
+      width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    } 
 /*Footer T*/
     .mobile_footer
     {
