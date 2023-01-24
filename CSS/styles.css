@@ -17,11 +17,14 @@ position: relative;
 top: 10px;
 left: -400px;
 }
-.mainheader 
+.mainheader, .mobileheader 
 {
 display: flex;
 margin-left: auto;
 margin-right: auto;
+}
+.mobileheader{
+display: none;
 }
 nav 
 {
@@ -562,6 +565,7 @@ height: 230px;
 }
 .footerheadline{
   font-family: outfit, Sans-serif;
+  list-style: none;
    font-size: 26px;
    font-weight: 800;
 }
@@ -679,12 +683,15 @@ to
     body {
     font-family: outfit, Sans-serif;
     }
-    .mainheader 
+    .mainheader, .mobileheader
     {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 769px;
+    }
+    .mobileheader{
+      display: none;
     }
     .nav {
     display: flex;
@@ -1318,6 +1325,12 @@ to
     {
     display: none;
     }
+    .footerheadline{
+      font-family: outfit, Sans-serif;
+      list-style: none;
+       font-size: 24px;
+       font-weight: 800;
+    }
 /*Modal popup*/
     :root
     {
@@ -1407,7 +1420,7 @@ to
      display: grid;
      place-content: center;
      }
-     .footercontent, .copyright, .topnav
+     .footercontent, .copyright, .topnav, .mainheader
      {
      display: none
      /*hidden for now */
