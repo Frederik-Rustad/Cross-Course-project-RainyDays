@@ -560,8 +560,10 @@ background-color: black;
 color: white;
 height: 230px;
 }
-ul{
+.footerheadline{
   font-family: outfit, Sans-serif;
+   font-size: 26px;
+   font-weight: 800;
 }
 .footercontent 
 {
