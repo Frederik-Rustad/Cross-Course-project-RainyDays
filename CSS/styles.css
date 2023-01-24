@@ -560,6 +560,9 @@ background-color: black;
 color: white;
 height: 230px;
 }
+ul{
+  font-family: outfit, Sans-serif;
+}
 .footercontent 
 {
 display: flex;
@@ -1605,7 +1608,7 @@ nav ul li {
      .itemC1, .itemC2, .itemC3, .itemC4, .itemCA 
      {
      background-color: #504d4d   
-     height: auto;
+     height auto;
      margin: 0%; 
      }
      .itemC1, .itemCA 
