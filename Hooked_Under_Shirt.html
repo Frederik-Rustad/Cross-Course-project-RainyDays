@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rainydays | Hooked T-shirt</title>
-    <meta name="description" content="Hooked T-shirt Rainydays." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainydays | Home</title>
+    <meta name="description" content="The Home page of Rainydays.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
-        </style>
-        <style> @import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap'); </style>
+  
   </head>
   <body>
-    <header>
+    <header class="header">
       <picture>
-        <source media="(max-width: 768px)" srcset="images/mobile_banner.jpg" alt="Mobile Main Header">        
-        <img src="images/Header.png" alt="Website header image" class="mainheader"/>
-      </picture>    
-      <!--Navigation bar-->
+    <img src="images/mobile_banner.jpg" alt="Mobile header image" class="mobileheader">   
+  </picture>
+    <picture>   
+        <img src="images/Header.png" alt="Website header image" class="mainheader">
+      </picture>
+      <!--Navigation bar -->      
       <nav class="nav"><b>
-        <a href="index.html" class="topnav" id="nav1">Home</a>
+        <a href="index.html" class="topnav" id="nav1"><u>Home</u></a>
         <a href="all_jackets.html" class="topnav" id="nav2">All Jackets</a>
         <a href="mens_jackets.html" class="topnav" id="nav3">Men's Jackets</a>
         <a href="womens_jackets.html" class="topnav" id="nav4">Women's Jackets</a>
         <a href="about.html" class="topnav" id="nav5">About</a>
         <a href="contact.html" class="topnav" id="nav6">Contact</a>
         <a href="checkout.html" class="topnav" id="nav7">Checkout🛒</a>
-    </b></nav>
+    </b>
+  </nav>
     <!--Mobile Navigation bar/ Home + Hamburger --> 
-    <div class="MobileNav" media="(max-width: 768px)">
-      <div> <a href="index.html"><img src="images/Mobile/Home.png" alt="Home Page Rainydays" class="Home_icon"></a></div>
-      <div class="slogan"><img src="images/Mobile/Pushing the Comfort Zone.png"><img src="images/Mobile/line.png"></div>
-      <div><label for="nav-toggle" class="nav-toggle-lable">
-       <span><img src="images/Mobile/Hamburger_menu.png" class="nav-toggle-icon"></span>
-   </label>
-   <input type="checkbox" id="nav-toggle" class="nav-toggle">
- <nav id="MobileMenu">
-  <ul>
+    <div class="MobileNav">
+     <div> <a href="index.html"><img src="images/Mobile/Home.png" alt="Home Page Rainydays" class="Home_icon"></a></div>
+     <div class="slogan"><img src="images/Mobile/PushingtheComfortZone.png" alt="slogan"><img src="images/Mobile/line.png" alt="line"></div>
+     <div><label for="nav-toggle" class="nav-toggle-lable">
+      <span><img src="images/Mobile/Hamburger_menu.png" class="nav-toggle-icon" alt="MENU_icon"></span>
+  </label>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+<nav id="MobileMenu">
+ <ul>
          <li></a><a href="checkout.html" class="drop"><img src="images/Mobile/checkoutHB.jpg" alt="checkout"></a></li>
          <li> <a href="all_jackets.html" class="drop"><img src="images/Mobile/jacketsHB.jpg" alt="Jackets"></a></li>
          <li><a href="mens_jackets.html" class="drop"><img src="images/Mobile/mensHB.jpg" alt="Men's"></a></li>
@@ -100,20 +99,21 @@
 </main>
 <!--Footer -->
 <footer>
-  <div class="mobile_footer" media="(max-width: 768px)" > 
+  <div class="mobile_footer"> 
     <div class="footermedia">
       <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="sosialmedia icons" class="sicons"></a>
       <a href="https://www.twitter.com/"><img src="images/twitter.png" alt="sosialmedia icons" class="sicons"></a>
       <a href="https://www.instagram.com"><img src="images/instagram.png" alt="sosialmedia icons" class="sicons"></a>
       <a href="https://youtu.be/IQqpnu6AhE8"><img src="images/youtube.png" alt="sosialmedia icons" class="sicons"></a>
     </div>
-    <div class="copymobile"> Copyright &copy; 2022 Rainydays50251.com</div>
+      <div class="copymobile"> Copyright &copy; 2022 Rainydays50251.com
+      </div>
   </div>
   <div class="footercontent"> 
-      <img src="images/footer-logo.png" alt="Rainydays logo" class="footerlogo" />
+      <img src="images/footer-logo.png" alt="Rainydays logo" class="footerlogo">
     <div class="contact">
     <ul>
-      <h2>Contact</h2>
+      <li class="footerheadline">Contact</li>
       <li><a href="contact.html" class="contact" id="OpeningHours">Opening Hours</a></li>
       <li><a href="contact.html" class="contact" id="CustomerSupport">Customer Support</a></li>
       <li><a href="contact.html" class="contact" id="Visitingaddress">Visiting address</a></li>
@@ -121,7 +121,7 @@
     </div>
     <div class="about">
       <ul>
-        <h2>About us</h2>
+        <li class="footerheadline">About us</li>
         <li><a href="about.html" class="about us" id="Ourwarehouses">Our warehouses</a></li>
         <li><a href="about.html" class="about us" id="Sponsors">Sponsors</a></li>
         <li><a href="about.html" class="about us" id="ComfortZone">Comfort Zone</a></li>
