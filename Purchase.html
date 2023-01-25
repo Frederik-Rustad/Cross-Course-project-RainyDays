@@ -71,7 +71,7 @@
         <div class="nameform">
         <input type="text" name="name" id="name" value="Full Name"></div>
         <div class="nameform">
-        <input type="text" name="name" id="name" value="Last Name"></div>
+        <input type="text" name="name" id="lname" value="Last Name"></div>
         <div class="emailform">
         <input type="email" name="email" id="email" value="Email"></div><div class="nameform">
           <div><h2><u>Shipping Address</u></h2></div>
@@ -80,11 +80,12 @@
           <input type="text" name="Apartment" id="Apartment" value="Apartment, suite, etc..."></div>
           <div class="nameform">
           <input type="text" name="City" id="City" value="City"></div><div class="nameform">
-            <input type="text" name="name" id="name" value="Full Name"></div>
+            <input type="text" name="Country" id="country" value="Country"></div>
             <div class="nameform">
             <input type="text" name="State" id="State" value="State / Province"></div>
             <div class="nameform">
             <input type="text" name="Zip" id="Zip" value="Zip / Postal code"></div>
+      </form>
       <div> 
     </div>
    </div>
@@ -107,11 +108,10 @@
      <div class="Ordertotal"> Order Total: </div>
      <div class="Ordertotal"><b>69$</b></div>
   </div>
-  <form class="payment">
     <div class="delivery">
-      <div><input type="radio" id="delivery" name="delivery" value="delivery"/> <img src="images/truck.png">Delivery estimated 3 / 5 workdays</div>
+      <div><input type="radio" id="delivery" name="delivery" value="delivery"> <img src="images/truck.png" alt="Truck">Delivery estimated 3 / 5 workdays</div>
       
-      <div><input type="radio" id="delivery" name="delivery" value="delivery"/><img src="images/Checkout/pony.png">Delivery estimated 30 / 45 workdays</div>
+      <div><input type="radio" id="delivery2" name="delivery" value="delivery"><img src="images/Checkout/pony.png" alt="Pony express">Delivery estimated 30 / 45 workdays</div>
     </div>
     <div class="ToU">By continuing you agree to the<a href="Terms_of_use.html" class="Terms_of_use" >Terms of use</a></div>
     <button name="OrderButton" class="cta" id="modal-btn" type="button">
@@ -122,21 +122,17 @@
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">&times;</span>
-    <div class="suc"><img src="images/deliv.png" class="moddev"> </div>
+    <div class="suc"><img src="images/deliv.png" alt="delivery" class="moddev"> </div>
       </div>
       <div class="modal-body">
-      <button class="cta"><a href="all_jackets.html">Continue shopping</a></button>
-      <button class="cta"><a href="index.html">Go to Home page</a></button>
+        <a href="all_jackets.html"><div class="cta">Continue shopping</div></a>
+        <a href="index.html"><div class="cta"></button>Go to Home page</div></a>
     </div>
     </div>
   </div>
 <script src="JS/main.js"></script>
 <!--Modal pop-up "END" -->
     </div></div>
-  </form>
-  
-  </div>
-</div>
   </section>
 </main>
 <!--Footer -->

@@ -255,7 +255,7 @@ height: auto;
 {
 width: 30px;
 }
-#delivery
+#delivery, #delivery2
 {
 width: 20px;
 height: 20px;
@@ -1146,7 +1146,7 @@ to
     font-size: 28px;
     font-weight: 400;
     }
-    #delivery 
+    #delivery, #delivery2
     {
     width: 20px;
     }
@@ -1286,7 +1286,7 @@ to
     border: 4px solid grey;        
     margin: 10px;
     }
-    #name, #email, #address, #Apartment, #City, #State, #Zip 
+    #name, #lname, #country, #email, #address, #Apartment, #City, #State, #Zip 
     {
     font-family: outfit, Sans-serif;
     font-size: 24px;
@@ -1692,7 +1692,7 @@ nav ul li {
      border: 4px solid grey;        
      margin: 10px;
      }
-     #name, #email, #address, #Apartment, #City, #State, #Zip 
+     #name, #lname, #country, #email, #address, #Apartment, #City, #State, #Zip 
      {
      font-family: outfit, Sans-serif;
      font-size: 24px;
@@ -1849,7 +1849,7 @@ a {
 .delivery {
   width: 360px;
 }
-#delivery{
+#delivery, #delivery2 {
   width: 30px;
 }
 .cta:active
