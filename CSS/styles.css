@@ -885,7 +885,7 @@ to
     }
     .price
     {
-    margin-top: -50px;
+    margin-top: -30px;
     }
     p{
     font-family: 'Hanuman', serif;
@@ -1324,6 +1324,9 @@ to
     .mobile_footer
     {
     display: none;
+    }
+    footer{
+      margin-top: 100px;
     }
     .footerheadline{
       font-family: outfit, Sans-serif;
