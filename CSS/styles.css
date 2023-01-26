@@ -1539,13 +1539,16 @@
 
 
 @media only screen and (max-width:768px) {
-
+  body {
+    margin: 0px;
+  }
   header,
   nav,
   main,
   footer {
     display: grid;
     place-content: center;
+    width: 100%;
   }
 
   .footercontent,
