@@ -1539,6 +1539,7 @@
 
 
 @media only screen and (max-width:768px) {
+  
   body {
     margin: 0px;
   }
@@ -2032,6 +2033,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+  }
+  .Terms_of_use {
+    color: purple;
+    text-decoration: underline;
   }
 
   .delivery {
