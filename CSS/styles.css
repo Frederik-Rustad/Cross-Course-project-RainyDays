@@ -111,7 +111,12 @@
     font-size: 18px;
     font-weight: 400;
   }
-
+  .click{
+    color: black;
+  }
+  .click:hover{
+    color: white;
+  }
   .cattext {
     margin-left: 5px;
   }
@@ -834,7 +839,12 @@
   .cattext {
     margin-left: 5px;
   }
-
+  .click{
+    color: black;
+  }
+  .click:hover{
+    color: white;
+  }
   h1 {
     font-family: outfit400, Sans-serif;
   }
@@ -1559,7 +1569,10 @@
     display: none
       /*hidden for now */
   }
-
+  .click{
+    color: black;
+  }
+ 
   .MobileNav {
     position: relative;
     display: flex;
