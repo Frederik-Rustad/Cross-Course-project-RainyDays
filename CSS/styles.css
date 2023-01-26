@@ -738,9 +738,9 @@
   #nav-toggle {
     display: none;
   }
-}
+}/*media bracket*/
 
-/*media bracket*/
+
 /* Tablet Media */
 @media only screen and (max-width:1032px) and (min-width:769px) {
   body {
@@ -1535,9 +1535,9 @@
   #nav-toggle {
     display: none;
   }
-}
+}/*media bracket*/
 
-/*media bracket*/
+
 @media only screen and (max-width:768px) {
 
   header,
@@ -2164,6 +2164,4 @@
       opacity: 1;
     }
   }
-}
-
-/*media bracket*/
+}/*media bracket*/
