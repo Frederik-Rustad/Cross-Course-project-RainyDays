@@ -39,7 +39,7 @@
   <input type="checkbox" id="nav-toggle" class="nav-toggle">
 <nav id="MobileMenu">
  <ul>
-         <li></a><a href="checkout.html" class="drop"><img src="images/Mobile/checkoutHB.jpg" alt="checkout"></a></li>
+         <li><a href="checkout.html" class="drop"><img src="images/Mobile/checkoutHB.jpg" alt="checkout"></a></li>
          <li> <a href="all_jackets.html" class="drop"><img src="images/Mobile/jacketsHB.jpg" alt="Jackets"></a></li>
          <li><a href="mens_jackets.html" class="drop"><img src="images/Mobile/mensHB.jpg" alt="Men's"></a></li>
          <li><a href="womens_jackets.html" class="drop"><img src="images/Mobile/womensHB.jpg" alt="Women's"></a></li>
@@ -62,7 +62,7 @@
   <div class="checkoutitem"> 
     <div> <img src="images/item1.jpg" alt="Patagonia Jacket" class="checkoutitem1"></div>
     <div><h1>Patagonia</h1>Industrial Green Hiking Jacket.<br><h1>50$</h1></div>
-   <div class="remove"> <a href="empty_checkout.html" aria-multiline="Remove Item" class="remove">Remove item</a> </div>
+   <div class="remove"> <a href="empty_checkout.html" class="remove">Remove item</a> </div>
   </div>
   
   <!--Ordersummary
@@ -82,22 +82,20 @@
      <div class="Ordertotal"><b>69$</b></div>
   </div>
   <div class="deliveryinfo">
-    <img src="images/truck.png"> Delivery estimated 3 / 5 workdays
+    <img src="images/truck.png" alt="truck icon"> Delivery estimated 3 / 5 workdays
   </div>
   <div class="Ordersummary"><h2><u>Payment methods</u></h2></div>
   <form class="payment">
     <div class="cards">
-      <div><input type="radio" id="PayPal" name="payment" value="payment"/> <img src="images/Checkout/paypal.png"></div>
+      <div><input type="radio" id="PayPal" name="payment" value="payment"/> <img src="images/Checkout/paypal.png" alt="PayPal"></div>
       
-      <div><input type="radio" id="Visa" name="payment" value="payment"/><img src="images/Checkout/visa.png"><img src="images/Checkout/mastercard.png"></div>
+      <div><input type="radio" id="Visa" name="payment" value="payment"><img src="images/Checkout/visa.png" alt="Visa"><img src="images/Checkout/mastercard.png" alt="MasterCard"></div>
     </div>
     <div class="ToU">By continuing you agree to the<a href="Terms_of_use.html" class="Terms_of_use" >Terms of use</a></div>
-    <button class="cta" id="buy" type="button">
-      <a href="Purchase.html" class="buy">Buy</a>
+    <a href="Purchase.html" class="buy"><button class="cta" id="buy" type="button">
+      Buy</a>
     </button>
-    </div>
-  </form>
-  
+  </form> 
   </div>
 </div>
   </section>
