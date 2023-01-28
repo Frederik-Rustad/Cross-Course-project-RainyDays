@@ -100,6 +100,10 @@
   }
 
   /*Homepage*/
+  .HomeCategories{
+    display: none;
+  }
+
   #category,
   #category2 {
     display: flex;
@@ -375,6 +379,7 @@
     width: var(--desktop);
   }
   .JacketName{
+    font-size: 32px;
     margin-bottom: 2em;
   }
 
@@ -801,6 +806,9 @@
     color: white;
     text-decoration: none;
   }
+  .HomeCategories{
+    display: none;
+  }
 
   #Burger_Colapsed,
   .MobileNav {
@@ -849,7 +857,7 @@
     color: white;
   }
   h1 {
-    font-family: outfit400, Sans-serif;
+    font-family: Outfit, Sans-serif;
   }
 
   h2 {
@@ -983,6 +991,8 @@
     width: 768px;
   }
   .JacketName{
+    font-weight: 800;
+    font-size: 28px;
     margin-bottom: 2em;
   }
 
@@ -1603,6 +1613,10 @@
     background-color: var(--mobile);
     ;
   }
+  
+  .HomeCategories{
+    display: none;
+  }
 
   /*button experiment*/
   #BurgerMenu {
@@ -1933,6 +1947,8 @@
     width: 360px;
   }
   .JacketName{
+    font-weight: 900;
+    font-size: 28px;
     margin-bottom: 2em;
   }
 
