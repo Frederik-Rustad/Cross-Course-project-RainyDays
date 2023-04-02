@@ -1,4 +1,4 @@
-let product = [
+let item1 =
     {
       id: "item1",
       title: "Patagonia",
@@ -12,27 +12,36 @@ let product = [
       image: "https://api.noroff.dev/images/rainy-days/0-akra-jacket.jpg",
       tags: ["jacket", "womens", "mens" ],
       favorite: false
-    },
+    } 
+let item2 =
     {
-        id: "97e77845-a485-4301-827f-51b673d4230f",
-        title: "Rainy Days Akra Jacket",
-        description: "The Women's Rainy Days Akra jacket is bound to be your new go-to water-repellent rain jacket.",
-        gender: "Female",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-        baseColor: "Red",
-        price: 129.99,
-        discountedPrice: 119.99,
-        onSale: true,
-        image: "https://api.noroff.dev/images/rainy-days/0-akra-jacket.jpg",
-        tags: ["jacket", "womens"],
-        favorite: true
-      },
-    // ...
-  ]
+      id: "item2",
+      title: "scottgore-tex",
+      description: "Durable Black Comfort",
+      gender: "All",
+      sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+      baseColor: "Black",
+      price: 199,
+      discountedPrice: 149,
+      onSale: false,
+      image: "https://api.noroff.dev/images/rainy-days/0-akra-jacket.jpg",
+      tags: ["jacket", "womens", "mens" ],
+      favorite: false
+    } 
+let item3 =
+    {
+      id: "item3",
+      title: "Scott Mountian",
+      description: "Quality Black Jacket",
+      gender: "All",
+      sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+      baseColor: "Black",
+      price: 250,
+      discountedPrice: 199,
+      onSale: false,
+      image: "https://api.noroff.dev/images/rainy-days/0-akra-jacket.jpg",
+      tags: ["jacket", "womens", "mens" ],
+      favorite: false
+    } 
   
-  const cattext = document.querySelector("cattext")
-  cat1A.innerHTML = `
-  <h2>${product.title}</h2> 
-Idustrial Green Hiking Jacket <br>
-<br>
-<h2>${product.price}$</h2>`
+ export default [item1, item2, item3];
