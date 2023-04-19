@@ -121,7 +121,7 @@
   .click:hover{
     color: white;
   }
-  .cattext {
+  .cattext, .description {
     margin-left: 5px;
   }
 
@@ -131,7 +131,11 @@
     font-size: 24px;
     font-weight: 800;
   }
-
+  .description {
+    margin-top: 0px;
+    font-size: 14px;
+    max-width: 280px;
+  }
   .cat1,
   .cat2,
   .cat3,
@@ -413,6 +417,7 @@
     font-size: 46px;
     margin-bottom: 10px;
   }
+ 
 
   .cta {
     display: flex;
@@ -847,7 +852,7 @@
     font-weight: 600;
   }
 
-  .cattext {
+  .cattext, .description {
     margin-left: 5px;
   }
   .click{
@@ -972,7 +977,8 @@
 
   /*jacket list pages T*/
   .itemlist,
-  .cattext {
+  .cattext,
+  .description {
     width: 220px;
     font-size: 14px;
   }
@@ -1026,7 +1032,9 @@
     font-size: 28px;
     margin-bottom: 10px;
   }
-
+  .description {
+    margin-top: 0px;
+  }
   .price {
     font-family: outfit, Sans-serif;
     font-size: 28px;
@@ -1711,7 +1719,7 @@
     width: 254px;
   }
 
-  .cattext {
+  .cattext, .description {
     font-family: outfit, Sans-serif;
     width: 254px;
     margin-bottom: 15px;
@@ -1813,7 +1821,10 @@
     margin-right: auto;
     width: 360px;
   }
-
+  .description {
+    margin-top: 0px;
+    font-size: 14px;
+  }
   .itemC1,
   .itemC2,
   .itemC3,
