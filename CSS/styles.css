@@ -167,7 +167,10 @@
     margin-right: auto;
     margin-top: 20px;
   }
-
+.itemlist{
+  width: 245px;
+  height: 280px;
+}
   .banner {
     display: flex;
     align-content: center;
@@ -979,10 +982,13 @@
   .itemlist,
   .cattext,
   .description {
-    width: 220px;
+   width: 220px;
+   
     font-size: 14px;
   }
-
+  .itemlist{
+    height: 260px;
+  }
   /*Jacket Specific item T*/
   .mainitem {
     display: grid;
@@ -1716,7 +1722,7 @@
   }
 
   .itemlist {
-    width: 254px;
+    max-width: 254px;
   }
 
   .cattext, .description {
