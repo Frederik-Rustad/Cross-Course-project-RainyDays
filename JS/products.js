@@ -8,14 +8,12 @@ fetch('https://api.noroff.dev/api/v1/rainy-days')
     const categoryBItems = document.querySelectorAll('#categoryB .cattext');
     const categoryCItems = document.querySelectorAll('#categoryC .cattext');
 
-    // Loop through each item in category A
+    // Loop through each item in categoryA
     categoryAItems.forEach((item, index) => {
-      // Get the title, price, and description from the API
+      // Get the title, price, image and description from the API
       const title = data[index].title.slice(10); // <- removes the first 10 characters (Rainy Days) ;
       const price = data[index].price;
       const description = data[index].description;
-
-      // Get the image URL from the API
       const imageURL = data[index].image;
 
       // Update the HTML with the title, price, description, and image
@@ -25,14 +23,12 @@ fetch('https://api.noroff.dev/api/v1/rainy-days')
       item.querySelector('.itemlist').setAttribute('src', imageURL);
     });
    
-    // Loop through each item in category B
+    // Loop through each item in categoryB
     categoryBItems.forEach((item, index) => {
-      // Get the title, price, and description from the API
+      // Get the title, price, image and description from the API
       const title = data[index + 3].title.slice(10);
       const price = data[index + 3].price;
       const description = data[index + 3].description;
-
-      // Get the image URL from the API
       const imageURL = data[index + 3].image;
 
       // Update the HTML with the title, price, description, and image
@@ -42,14 +38,12 @@ fetch('https://api.noroff.dev/api/v1/rainy-days')
       item.querySelector('.itemlist').setAttribute('src', imageURL);
     });
     
-    // Loop through each item in category C
+    // Loop through each item in categoryC
     categoryCItems.forEach((item, index) => {
-      // Get the title, price, and description from the API
+      // Get the title, price, image and description from the API
       const title = data[index + 6].title.slice(10);
       const price = data[index + 6].price;
       const description = data[index + 6].description;
-
-      // Get the image URL from the API
       const imageURL = data[index + 6].image;
 
       // Update the HTML with the title, price, description, and image
