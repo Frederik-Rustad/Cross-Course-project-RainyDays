@@ -1,27 +1,16 @@
 
+const urlApi = "https://api.noroff.dev/api/v1/rainy-days/97e77845-a485-4301-827f-51b673d4230f";
 
-// const endpoint = "https://api.noroff.dev/api/v1/rainy-days";
-// const proxyServer = " https://noroffcors.onrender.com/";
+async function fetchJacket( ) {
+ const response = await fetch(urlApi);
+ const json = await response.json();
 
-// fetch(endpoint)
-//   .then(response => response.json())
-//   .then(data => {
-//     // execute step 2.
-//     data.forEach(rainyDay => {
-//       // execute step 3.
-//       let link = document.createElement('a');
-//       // execute step 4.
-//       link.href = `/rainy-day-details.html?id=${rainyDay.id}`;
-//       // execute step 5.
-//       link.addEventListener('click', () => {
-//         // execute step 6.
-//         const rainyDayDetailsEndpoint = `https://api.noroff.dev/api/v1/rainy-days/${rainyDay.id}`;
+ console.log(json)
 
-//         fetch(rainyDayDetailsEndpoint)
-//           .then(response => response.json())
-//           .then(rainyDayDetailsData => {
-//             // execute step 7.           
-//           });
-//       });
-//     });
-//   });
+ document.querySelector(".JacketName").textContent = `${json.title.slice(10)}`
+ document.querySelector(".detailPrice").textContent = `${json.price}$`;
+ document.querySelector(".descriptiontext").textContent = json.description;
+ document.querySelector(".jacket").setAttribute("src", json.image);
+}
+
+fetchJacket();
