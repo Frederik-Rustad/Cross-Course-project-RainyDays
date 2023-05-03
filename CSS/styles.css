@@ -391,7 +391,7 @@
   }
 
   .jacket, .jacket1 {
-    width: 450px;
+    max-width: 350px;
   }
 
   .logoitem {
@@ -759,6 +759,35 @@
   #nav-toggle {
     display: none;
   }
+  .spinner {
+    position: relative;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .spinner:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    border-top-color: #333;
+    animation: spinner 0.6s linear infinite;
+  }
+  
+  @keyframes spinner {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
 }/*media bracket*/
 
 
@@ -1009,7 +1038,7 @@
   }
 
   .jacket, .jacket1 {
-    width: 250px;
+    max-width: 250px;
   }
 
   .logoitem {
@@ -1575,6 +1604,35 @@
   #nav-toggle {
     display: none;
   }
+  .spinner {
+    position: relative;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .spinner:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    border-top-color: #333;
+    animation: spinner 0.6s linear infinite;
+  }
+  
+  @keyframes spinner {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
 }/*media bracket*/
 
 
@@ -2227,4 +2285,33 @@
       opacity: 1;
     }
   }
+  .spinner {
+    position: relative;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .spinner:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    border-top-color: #333;
+    animation: spinner 0.6s linear infinite;
+  }
+  
+  @keyframes spinner {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
 }/*media bracket*/

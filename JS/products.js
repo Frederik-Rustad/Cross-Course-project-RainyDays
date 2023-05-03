@@ -1,4 +1,4 @@
-console.log("product list script is loaded")
+// console.log("product list script is loaded")
 
 // Fetch the API
 const apiUrl = "https://api.noroff.dev/api/v1/rainy-days"
@@ -36,22 +36,19 @@ fetch(apiUrl)
   })
   .catch(error => console.log(error));
 
-  // Get all jacket links
 const jacketLinks = document.querySelectorAll(".JacketsImg");
-
-// Add a click event listener to each jacket link
 jacketLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     
-    // Get the ID from the jacket link's "id" attribute
+    // Get the ID from the jacket link's "#id" attribute
     const jacketId = link.getAttribute("id");
-    console.log(jacketId);
+    // console.log(jacketId);
 
-    // Fetch the API using the ID
+    // Fetch the correct product from the API using the products ID
     fetch(`https://api.noroff.dev/api/v1/rainy-days/${jacketId}`)
       .then((res) => res.json())
       .then((data) => {
-        // Get the title, price, and description from the API
+        // Get the title, price, description and image from the API
         const title = data.title.slice(10);
         const price = data.price;
         const description = data.description;
@@ -62,8 +59,6 @@ jacketLinks.forEach((link) => {
         document.querySelector(".detailPrice").textContent = `${price}$`;
         document.querySelector(".descriptiontext").textContent = description;
         document.querySelector(".jacket").setAttribute("src", imageURL);
-
-        // Prevent the default action of the anchor tag
         event.preventDefault();
       })
       .catch((error) => console.log(error));

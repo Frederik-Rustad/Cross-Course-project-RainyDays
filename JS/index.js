@@ -16,6 +16,7 @@ for (let i = 0; i < products.length; i++) {
 const jacketLinks = document.querySelectorAll(".JacketsImg");
 jacketLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
+      
       // Get the ID from the jacket link's "id" attribute
       const jacketId = link.getAttribute("id");
       console.log(jacketId);
@@ -32,15 +33,23 @@ jacketLinks.forEach((link) => {
 const urlApi = `https://api.noroff.dev/api/v1/rainy-days/`;
 
 async function fetchJacket(jacketId) {
+  const cattext = document.querySelector('.cattext');
+  cattext.innerHTML = 'Loading...';
+
+  try {
     const response = await fetch(`${urlApi}${jacketId}`);
     const json = await response.json();
-    
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelector(".JacketName").textContent = `${json.title.slice(10)}`
-      document.querySelector(".detailPrice").textContent = `${json.price}$`;
-      document.querySelector(".descriptiontext").textContent = json.description;
-      document.querySelector(".jacket").setAttribute("src", json.image);
-    });
+
+    document.querySelector('.JacketName').textContent = `${json.title.slice(10)}`
+    document.querySelector('.detailPrice').textContent = `${json.price}$`;
+    document.querySelector('.descriptiontext').textContent = json.description;
+    document.querySelector('.jacket').setAttribute('src', json.image);
+
+    cattext.innerHTML = ''; // Clear the loading message once data is loaded
+  } catch (error) {
+    cattext.innerHTML = `Error loading data: ${error.message}`; // Display error message if fetching data fails
   }
+}
+
 
 // fetchJacket();
