@@ -11,19 +11,18 @@ async function fetchJacket(jacketId) {
   const mainItem = document.querySelector('.mainitem');
   mainItem.innerHTML = `
   <div class="mainitem">
- <div><a class="jacket1"><img src="${json.image}" alt="Product Image" class="jacket"></a></div>
- <div class=itemdescription><img src="images/RainyDays_Logo.png" alt="Rainydays Logo " class=logoitem>
-  <div class="jacket_name"><h1 class="JacketName">${json.title.slice(10)}</h1></div>
-  <div class="price"><h4 class="detailPrice">${json.price}$</h4></div>
- <div class="detailsWrapper">
- <div class="detailsText">
-   <h2 class="descriptiontext">${json.description}</h2>
- </div>
-</div>
-<button class="cta" id="modal-btn" type="button">
+    <div><a class="jacket1"><img src="${json.image}" alt="Product Image" class="jacket"></a></div>
+     <div class=itemdescription><img src="images/RainyDays_Logo.png" alt="Rainydays Logo " class=logoitem>
+       <div class="jacket_name"><h1 class="JacketName">${json.title.slice(10)}</h1></div>
+       <div class="price"><h4 class="detailPrice">${json.price}$</h4></div>
+       <div class="detailsWrapper">
+       <div class="detailsText">
+       <h2 class="descriptiontext">${json.description}</h2>
+      </div>
+    </div>
+  <button class="cta" id="modal-btn" type="button">
 Add to cart <img src="images/cart.png" alt="cart icon" class="cart">
 </button>
-  
   `;
 }
 

@@ -30,26 +30,20 @@ jacketLinks.forEach((link) => {
     });
   });
 
-const urlApi = `https://api.noroff.dev/api/v1/rainy-days/`;
+// const urlApi = `https://api.noroff.dev/api/v1/rainy-days/`;
 
 async function fetchJacket(jacketId) {
-  const cattext = document.querySelector('.cattext');
-  cattext.innerHTML = 'Loading...';
+  const cattext = document.querySelector(".cattext");
+  cattext.innerHTML = "Loading...";
 
   try {
     const response = await fetch(`${urlApi}${jacketId}`);
-    const json = await response.json();
-
-    document.querySelector('.JacketName').textContent = `${json.title.slice(10)}`
-    document.querySelector('.detailPrice').textContent = `${json.price}$`;
-    document.querySelector('.descriptiontext').textContent = json.description;
-    document.querySelector('.jacket').setAttribute('src', json.image);
-
-    cattext.innerHTML = ''; // Clear the loading message once data is loaded
+   
+    cattext.innerHTML = " "; 
   } catch (error) {
-    cattext.innerHTML = `Error loading data: ${error.message}`; // Display error message if fetching data fails
+    cattext.innerHTML = `Error loading data: Refresh page ! `; // Display error message if fetching data fails
   }
 }
 
 
-// fetchJacket();
+// fetchJacket(); call to test error message.

@@ -1,6 +1,3 @@
-// console.log("product list script is loaded")
-
-// Fetch the API
 const apiUrl = "https://api.noroff.dev/api/v1/rainy-days"
 fetch(apiUrl)
   .then(res => res.json())
@@ -28,8 +25,7 @@ fetch(apiUrl)
     const categoryAItems = document.querySelectorAll("#categoryA .cattext");
     const categoryBItems = document.querySelectorAll("#categoryB .cattext");
     const categoryCItems = document.querySelectorAll("#categoryC .cattext");
-
-    // Update the category items, so they dont just repeat the same in each category.
+    // Update the category items, so they dont just repeat the same products in each category.
     updateCategoryItems(categoryAItems, 0);
     updateCategoryItems(categoryBItems, 3);
     updateCategoryItems(categoryCItems, 6);

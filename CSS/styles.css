@@ -9,6 +9,9 @@
 
 /*Desktop styles*/
 @media only screen and (min-width:1033px) {
+  .loading:before {
+    content: "Loading...";
+  }
   body {
     margin-left: auto;
     margin-right: auto;
@@ -793,6 +796,9 @@
 
 /* Tablet Media */
 @media only screen and (max-width:1032px) and (min-width:769px) {
+  .loading:before {
+    content: "Loading...";
+  }
   body {
     font-family: outfit, Sans-serif;
   }
@@ -1637,6 +1643,9 @@
 
 
 @media only screen and (max-width:768px) {
+  .loading:before {
+    content: "Loading...";
+  }
   
   body {
     margin: 0px;
