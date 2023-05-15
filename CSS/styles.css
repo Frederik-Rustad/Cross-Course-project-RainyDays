@@ -1820,7 +1820,7 @@
   }
 
   h2 {
-    line-height: 0em;
+    line-height: 1em;
   }
 
   .banner {
@@ -2045,7 +2045,9 @@
   .jacket, .jacket1 {
     width: 255px;
   }
-
+.jacketPrice{
+  margin-top: 0px;
+}
   .logoitem {
     display: none;
   }
