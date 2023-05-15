@@ -7,7 +7,7 @@ async function fetchJacket(jacketId) {
   const response = await fetch(`${urlApi}${jacketId}`);
   const json = await response.json();
   
-  // Update the DOM with fetched data
+  // Update with fetched data
   const mainItem = document.querySelector('.mainitem');
   mainItem.innerHTML = `
   <div class="mainitem">

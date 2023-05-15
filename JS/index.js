@@ -44,6 +44,3 @@ async function fetchJacket(jacketId) {
     cattext.innerHTML = `Error loading data: Refresh page ! `; // Display error message if fetching data fails
   }
 }
-
-
-// fetchJacket(); call to test error message.
