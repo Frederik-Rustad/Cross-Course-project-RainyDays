@@ -894,6 +894,7 @@
   .cattext, .description {
     margin-left: 5px;
   }
+
   /* .cattext:hover{
     background-color: var(--main-orange);
     color: var(--modal-color);
