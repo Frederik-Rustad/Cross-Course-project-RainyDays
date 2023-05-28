@@ -125,8 +125,12 @@
     color: white;
   }
   .cattext, .description {
-    
+   max-width: 260px;
     margin-left: 5px;
+  }
+   .cattext:hover{
+    background-color: var(--main-orange);
+    color: var(--modal-color);
   }
 
   h1, h2 {
@@ -172,8 +176,8 @@
     margin-top: 20px;
   }
 .itemlist{
-  width: 245px;
-  height: 280px;
+  width: 260px;
+  height: 285px;
 }
   .banner {
     display: flex;
@@ -892,13 +896,14 @@
   }
 
   .cattext, .description {
+    max-width: 260px;
     margin-left: 5px;
   }
 
-  /* .cattext:hover{
+  .cattext:hover{
     background-color: var(--main-orange);
     color: var(--modal-color);
-  } */
+  }
   .click{
     color: black;
   }
@@ -1802,6 +1807,10 @@
     font-family: outfit, Sans-serif;
     width: 254px;
     margin-bottom: 15px;
+  }
+   .cattext:hover{
+    background-color: var(--main-orange);
+    color: var(--modal-color);
   }
 
   .catimg {
