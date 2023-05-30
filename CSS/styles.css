@@ -1532,7 +1532,18 @@
     color: white;
     background: var(--dark-grey);
     border: 4px solid var(--dark-grey);
-    margin-left: 680px;
+    box-shadow: var(--mobile) 0px 7px 0px 0px;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    margin-left: 650px;
+  }
+  .send:hover {
+    cursor: pointer;
+  }
+  .send:active{
+    box-shadow: var(--mobile) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 300ms;
   }
 
   .terms {
@@ -2045,12 +2056,14 @@
 
   .send {
     font-weight: 800;
+    width: 90px;
     color: white;
     background: var(--dark-grey);
-    ;
     border: 4px solid var(--dark-grey);
-    ;
-    width: 90px;
+    box-shadow: var(--mobile) 0px 7px 0px 0px;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    margin-left: 120px;
   }
 
   /*Jacket Specific item*/
