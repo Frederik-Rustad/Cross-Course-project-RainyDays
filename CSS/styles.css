@@ -22,14 +22,14 @@
     font-family: outfit400, Sans-serif;
   }
 
-  .sicons {
+  .sicons, .sosialLink  {
     height: 65px;
     width: auto;
     position: relative;
-    top: 10px;
-    left: -400px;
+    top: 0px;
+    left: 300px;
   }
-
+ 
   .mainheader,
   .mobileheader {
     display: flex;
@@ -603,8 +603,9 @@
   .contactsosial {
     display: flex;
     margin-top: 95px;
+    position: absolute;
   }
-
+ 
   .itemC4 {
     display: flex;
     justify-content: center;
@@ -1001,8 +1002,7 @@
     height: 50px;
     width: auto;
     position: relative;
-    top: 20px;
-    left: -280px;
+    left: 400px;
   }
 
   /*Footer T */
@@ -1471,6 +1471,8 @@
   .contactsosial {
     display: flex;
     margin-top: 65px;
+
+    position: absolute;
   }
 
   .itemC4 {
@@ -2237,7 +2239,7 @@
   }
 
   .sicons {
-    margin-top: 10px;
+    margin-top: -5px;
     width: 40px;
   }
 
