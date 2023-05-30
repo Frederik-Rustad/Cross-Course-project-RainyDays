@@ -126,6 +126,7 @@
   }
   .cattext, .description {
    max-width: 260px;
+   max-height: 450PX;
     margin-left: 5px;
   }
    .cattext:hover{
@@ -636,7 +637,18 @@
     color: white;
     background: var(--dark-grey);
     border: 4px solid var(--dark-grey);
+    box-shadow: var(--mobile) 0px 7px 0px 0px;
+    border-radius: 15px;
+    letter-spacing: 2px;
     margin-left: 900px;
+  }
+  .send:hover {
+    cursor: pointer;
+  }
+  .send:active{
+    box-shadow: var(--mobile) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 300ms;
   }
 
   /*Footer*/
