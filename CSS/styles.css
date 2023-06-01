@@ -29,6 +29,12 @@
     top: 0px;
     left: 300px;
   }
+  .indexsicons {
+    position: relative;
+    height: 65px;;
+    left: -350px;
+    top: 10px;
+  }
  
   .mainheader,
   .mobileheader {
@@ -1003,6 +1009,12 @@
     width: auto;
     position: relative;
     left: 400px;
+  }
+  .indexsicons {
+    position: relative;
+    height: 50px;;
+    left: -250px;
+    top: 20px;
   }
 
   /*Footer T */
@@ -2251,7 +2263,7 @@
     align-items: center;
   }
 
-  .sicons {
+  .sicons, .indexsicons {
     margin-top: -5px;
     width: 40px;
   }
