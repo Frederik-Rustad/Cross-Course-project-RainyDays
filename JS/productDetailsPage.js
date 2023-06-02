@@ -20,9 +20,9 @@ async function fetchJacket(jacketId) {
        <h2 class="descriptiontext">${json.description}</h2>
       </div>
     </div>
-  <button class="cta" id="modal-btn" type="button">
-Add to cart <img src="images/cart.png" alt="cart icon" class="cart">
-</button>
+    <button class="cta" id="modal-btn" type="button">
+    Add to cart <img src="images/cart.png" alt="cart icon" class="cart">
+    </button>
   `;
 }
 
