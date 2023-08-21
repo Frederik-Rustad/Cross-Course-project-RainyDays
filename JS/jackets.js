@@ -46,12 +46,17 @@ fetch(productListURL)
       if (matchinItem) {
         matchinItem.quantity +=1;
       } else {
-       console.log(`Added product with ID: ${productId}`);
          cart.push({
           productId: productId,
           quantity: 1
-      })
+        })
       }
-      console.log(cart);
+      let cartQuantity = 0;
+
+cart.forEach((item) => {
+  cartQuantity += item.quantity;
+
+  document.querySelector('.js-cart-quantity').innerHTML = `Checkout (${cartQuantity})`;
+      });
     }
   });
