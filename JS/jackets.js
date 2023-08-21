@@ -18,7 +18,8 @@ fetch(productListURL)
         <h2>${product.name}</h2>
         <div class='description'>${product.description}</div>
           <h2 class='jacketPrice'> $ ${(product.price)}</h2> 
-          <button class="js-add-to-cart">Add to cart</button>
+          <button class="js-add-to-cart"
+          data-product-id="${product.id}">Add to cart</button>
         </div> 
       `;
     });
@@ -28,3 +29,12 @@ fetch(productListURL)
   .catch(error => {
     console.error('Error fetching products:', error);
   });
+
+  document.querySelectorAll('.js-add-to-cart')
+  .forEach((button) => {
+    button.addEventListener('click', () => {
+       console.log(button.dataset);
+    });
+  }); 
+
+
