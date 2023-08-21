@@ -10,7 +10,6 @@ for (let i = 0; i < products.length; i++) {
     const productArray = product.title
     console.log(productArray)
 }
-
 //------product details page------
 // Add a click event listener to each jacket link
 const jacketLinks = document.querySelectorAll(".JacketsImg");

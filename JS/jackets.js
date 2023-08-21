@@ -14,9 +14,9 @@ fetch(productListURL)
             
       products1HTML += `
         <div class='cattext'>
-          <a class='JacketsImg' href='productDetailPage.html'><img src="${product.images[0].src}" alt='Product' class='itemlist'></a>
-          <h2>${product.name}</h2>
-          <div class='description'>${product.description}</div>
+        <a class='JacketsImg' href='productDetailPage.html'><img src="${product.images[0].src}" alt='Product' class='itemlist'></a>
+        <h2>${product.name}</h2>
+        <div class='description'>${product.description}</div>
           <h2 class='jacketPrice'> $ ${(product.price)}</h2> 
           <button class="js-add-to-cart">Add to cart</button>
         </div> 
