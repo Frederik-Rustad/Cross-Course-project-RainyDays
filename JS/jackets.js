@@ -18,7 +18,7 @@ fetch(productListURL)
         <h2>${product.name}</h2>
         <div class='description'>${product.description}</div>
           <h2 class='jacketPrice'> $ ${(product.price)}</h2> 
-          <button class="js-add-to-cart"
+          <button class="add-to-cart-button js-add-to-cart"
           data-product-id="${product.id}">Add to cart</button>
         </div> 
       `;
@@ -30,11 +30,28 @@ fetch(productListURL)
     console.error('Error fetching products:', error);
   });
 
-  document.querySelectorAll('.js-add-to-cart')
-  .forEach((button) => {
-    button.addEventListener('click', () => {
-       console.log(button.dataset);
-    });
-  }); 
+  document.querySelector('.js-products-grid').addEventListener('click', (event) => {
+    if (event.target.classList.contains('js-add-to-cart')) {
+      const productId = event.target.dataset.productId;
 
+      let matchinItem;
 
+      cart.forEach((item) => {
+       if (productId === item.productId) {
+        matchinItem = item;
+         return;
+       }
+      });
+
+      if (matchinItem) {
+        matchinItem.quantity +=1;
+      } else {
+       console.log(`Added product with ID: ${productId}`);
+         cart.push({
+          productId: productId,
+          quantity: 1
+      })
+      }
+      console.log(cart);
+    }
+  });
