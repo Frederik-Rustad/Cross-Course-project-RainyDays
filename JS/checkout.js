@@ -1,0 +1,38 @@
+import { cart } from './cart.js';
+
+const productListURL = 'https://freddev.no/wp-json/wc/v3/products?consumer_key=ck_30e8103f197d7cd1aa762d83de509977404484c5&consumer_secret=cs_7b79eaa839f2630192c85e81897ff47b8d826eee';
+
+console.log('Loading checkout.js');
+
+const checkoutCart = document.querySelector('.js-chechout-cart');
+
+fetch(productListURL)
+  .then(response => response.json())
+  .then(productsData => {
+    cart.forEach(cartItem => {
+      const productId = cartItem.productId;
+
+      const matchingProduct = productsData.find(product => product.id === parseInt(productId));
+
+      if (matchingProduct) {
+        const checkoutItemHTML = `
+          <div class="checkoutitem"> 
+            <div> <img src="${matchingProduct.images[0].src}" alt="${matchingProduct.name}" class="checkoutitem1"></div>
+            <div class="checkoutText">
+              <h2>${matchingProduct.name}</h2><br>
+              ${matchingProduct.description}<br>
+              <h2>$${(matchingProduct.price)}</h2>
+            </div>
+            <div class="remove">
+              <a href="empty_checkout.html" class="remove">Remove item</a>
+            </div>
+          </div>
+        `;
+
+        checkoutCart.innerHTML += checkoutItemHTML;
+      }
+    });
+  })
+  .catch(error => {
+    console.error('Error fetching products:', error);
+  });

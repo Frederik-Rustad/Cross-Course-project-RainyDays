@@ -269,6 +269,13 @@
   .checkoutsummary {
     background-color: var(--box-background);
     border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .checkoutText p{
+    font-size: 18px;
+  }
+  .checkoutText h2{
+    font-size: 24px;
   }
 
   .checkoutitem {
