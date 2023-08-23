@@ -16,7 +16,7 @@ fetch(productListURL)
 
       if (matchingProduct) {
         const checkoutItemHTML = `
-          <div class="checkoutitem"> 
+          <div class="checkoutitem js-cart-item-container-${matchingProduct.id}"> 
             <div> <img src="${matchingProduct.images[0].src}" alt="${matchingProduct.name}" class="checkoutitem1"></div>
             <div class="checkoutText">
                 <h2>${matchingProduct.name}</h2><br>
@@ -31,6 +31,7 @@ fetch(productListURL)
         `;
 
         checkoutCart.innerHTML += checkoutItemHTML;
+        console.log(cartItem);
       }
     });
 
@@ -40,6 +41,8 @@ fetch(productListURL)
         const productId = button.dataset.productId;
         removeFromCart(productId);
         console.log(cart);
+
+        document.querySelector(`.js-cart-item-container-${productId}`).remove();
       });
     });
   })
