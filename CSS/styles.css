@@ -295,8 +295,13 @@
     display: flex;
     align-self: flex-end;
     margin-bottom: 5px;
-    font-size: 14px;
+    margin-left: 5px;
+    font-size: 10px;
     color: black;
+  }
+  .ToU a {
+    color: blueviolet;
+    text-decoration: underline;
   }
 
   .checkoutsummary {

@@ -19,18 +19,28 @@ fetch(productListURL)
           <div class="checkoutitem"> 
             <div> <img src="${matchingProduct.images[0].src}" alt="${matchingProduct.name}" class="checkoutitem1"></div>
             <div class="checkoutText">
-              <h2>${matchingProduct.name}</h2><br>
-              ${matchingProduct.description}<br>
-              <h2>$${(matchingProduct.price)}</h2>
-            </div>
-            <div class="remove">
-              <a href="empty_checkout.html" class="remove">Remove item</a>
-            </div>
+                <h2>${matchingProduct.name}</h2><br>
+                ${matchingProduct.description}<br>
+                <h2>$${(matchingProduct.price)}</h2>
+              <div class="remove">
+               ( ${cartItem.quantity} )<button class="remove js-delete-button" data-product-id="${matchingProduct.id}"> Remove item</button>
+                </div>
+                
+                </div>
           </div>
         `;
 
         checkoutCart.innerHTML += checkoutItemHTML;
       }
+    });
+
+    document.querySelectorAll('.js-delete-button')
+    .forEach((button) => {
+      button.addEventListener('click', () => {
+        console.log('Removing item from cart');
+        const productId = button.dataset.productId;
+        console.log('productId', productId);
+      });
     });
   })
   .catch(error => {

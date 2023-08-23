@@ -2,6 +2,10 @@ export const cart = [{
   productId: '24', 
   quantity: 1,
 },
+{
+  productId: '14', 
+  quantity: 1,
+},
 { productId: '18',
   quantity: 2
 } 
