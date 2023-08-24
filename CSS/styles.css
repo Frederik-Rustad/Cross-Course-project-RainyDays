@@ -17,6 +17,9 @@
     margin-right: auto;
     margin-bottom: 0px;
   }
+  .loader {
+    font-size: 14px;
+  }
 
   h1 {
     font-family: outfit400, Sans-serif;
@@ -181,9 +184,9 @@
     color: white;
   }
 
-  #categoryA,
-  #categoryB,
-  #categoryC {
+  #categoryA, 
+  .js-featured-products
+   {
     display: flex;
     justify-content: space-evenly;
     width: var(--desktop);
@@ -908,6 +911,15 @@
     padding-right: 5px;
     color: white;
     text-decoration: none;
+  }
+  .js-add-to-cart{
+    border-radius: 10px;
+    background-color: var(--main-orange);
+    color: var(--modal-color);
+  }
+  .js-add-to-cart:hover {
+    background-color: var(--box-background);
+    color: var(--mobile);
   }
   .HomeCategories{
     display: none;
@@ -1785,7 +1797,11 @@
     font-size: 14px;
     max-width: 280px;
   }
-
+  .js-add-to-cart{
+    border-radius: 10px;
+    background-color: var(--main-orange);
+    color: var(--modal-color);
+  }
   .slogan {
     position: absolute;
     margin-left: 70px;

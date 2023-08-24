@@ -6,10 +6,14 @@ console.log('Loading checkout.js');
 
 const checkoutCart = document.querySelector('.js-chechout-cart');
 
+checkoutCart.innerHTML = '<p>Loading...</p>';
 
 fetch(productListURL)
   .then(response => response.json())
   .then(productsData => {
+
+    checkoutCart.innerHTML = '';
+
     cart.forEach(cartItem => {
       const productId = cartItem.productId;
 
