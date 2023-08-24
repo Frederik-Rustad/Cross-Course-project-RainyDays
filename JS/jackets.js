@@ -13,7 +13,7 @@ fetch(productListURL)
     data.forEach(product => {
       products1HTML += `
         <div class='cattext'>
-        <a class='JacketsImg js-product-detail' href='productDetailPage.html'><img src="${product.images[0].src}" alt='Product' class='itemlist'></a>
+        <a class='JacketsImg js-product-detail' data-product-id="${product.id}" href='productDetailPage.html'><img src="${product.images[0].src}" alt='Product' class='itemlist'></a>
         <h2>${product.name}</h2>
         <div class='description'>${product.description}</div>
           <h2 class='jacketPrice'> $ ${(product.price)}</h2> 
