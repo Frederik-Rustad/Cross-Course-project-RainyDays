@@ -1,10 +1,11 @@
-import { cart, removeFromCart } from './cart.js';
+import { cart, removeFromCart, renderCartQuantity } from './cart.js';
 
 const productListURL = 'https://freddev.no/wp-json/wc/v3/products?consumer_key=ck_30e8103f197d7cd1aa762d83de509977404484c5&consumer_secret=cs_7b79eaa839f2630192c85e81897ff47b8d826eee';
 
 console.log('Loading checkout.js');
 
 const checkoutCart = document.querySelector('.js-chechout-cart');
+
 
 fetch(productListURL)
   .then(response => response.json())
@@ -43,9 +44,12 @@ fetch(productListURL)
         console.log(cart);
 
         document.querySelector(`.js-cart-item-container-${productId}`).remove();
+        renderCartQuantity();
       });
     });
   })
   .catch(error => {
     console.error('Error fetching products:', error);
   });
+  
+  renderCartQuantity();

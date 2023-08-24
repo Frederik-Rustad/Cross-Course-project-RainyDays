@@ -1,4 +1,4 @@
-import {cart, addToCart} from './cart.js';
+import {cart, addToCart, renderCartQuantity } from './cart.js';
 console.log('Loading jackets.js');
 const productsURL = 'https://freddev.no/wp-json/wc/v3/products';
 const keys = '?consumer_key=ck_30e8103f197d7cd1aa762d83de509977404484c5&consumer_secret=cs_7b79eaa839f2630192c85e81897ff47b8d826eee';
@@ -27,15 +27,6 @@ fetch(productListURL)
   .catch(error => {
     console.error('Error fetching products:', error);
   });
-
-function renderCartQuantity() {  
-  let cartQuantity = 0;
-
-  cart.forEach((cartItem) => {
-   cartQuantity += cartItem.quantity;
-   });
-  document.querySelector('.js-cart-quantity').innerHTML = `Checkout (${cartQuantity})`;
- }
 
   document.querySelector('.js-products-grid').addEventListener('click', (event) => {
     if (event.target.classList.contains('js-add-to-cart')) {
