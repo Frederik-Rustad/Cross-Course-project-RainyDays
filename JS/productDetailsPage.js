@@ -1,5 +1,4 @@
-import { renderCartQuantity } from "./cart.js";
-
+import { renderCartQuantity, addToCart } from "./cart.js";
 
 console.log('Loading productDetailPage.js');
 
@@ -33,14 +32,26 @@ fetch(productListURL)
              <h2 class="descriptiontext">${matchingProduct.description}</h2>
             </div>
          </div>
-          <button class="cta" id="modal-btn" type="button">
-          Add to cart <img src="images/cart.png" alt="cart icon" class="cart">
-         </button>
+         <button class="add-to-cart-button cta js-add-to-cart"
+         data-product-id="${matchingProduct.id}">Add to cart</button>
          `;
 
       productDetail.innerHTML = productDetailHTML;
     }
   });
 
+  document.querySelector('.js-product-detail-container').addEventListener('click', (event) => {
+    if (event.target.classList.contains('js-add-to-cart')) {
+      const productId = event.target.dataset.productId;
+      addToCart(productId);
+      renderCartQuantity();
+    }
+  });
 
 renderCartQuantity();
+
+
+
+/* <button class="cta" id="modal-btn" type="button">
+Add to cart <img src="images/cart.png" alt="cart icon" class="cart">
+</button> */

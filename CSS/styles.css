@@ -448,6 +448,7 @@
 
   .price {
     margin-top: -50px;
+    margin-bottom: 20px;
   }
 
   p {
@@ -455,7 +456,7 @@
     font-weight: 400;
     font-size: 24px;
     margin-top: -30px;
-  }
+    }
 
   h3 {
     margin-top: -6px;
