@@ -35,3 +35,5 @@ fetch(productListURL)
       renderCartQuantity();
     }
   });
+  
+  renderCartQuantity()
