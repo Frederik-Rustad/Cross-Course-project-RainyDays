@@ -61,6 +61,14 @@ fetch(productListURL)
     }
   });
 
+  document.querySelector('.js-featured-products').addEventListener('click', (event) => {
+    if (event.target.classList.contains('js-add-to-cart')) {
+      const productId = event.target.dataset.productId;
+      addToCart(productId);
+      
+      renderCartQuantity();
+    }
+  });
   renderCartQuantity()
 
   function getIdToDetailsPage() {
