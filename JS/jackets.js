@@ -3,6 +3,8 @@ import { addToCart, renderCartQuantity } from './cart.js';
 const productsURL = 'https://freddev.no/wp-json/wc/v3/products';
 const keys = '?consumer_key=ck_30e8103f197d7cd1aa762d83de509977404484c5&consumer_secret=cs_7b79eaa839f2630192c85e81897ff47b8d826eee';
 
+// const featuredProductsURL = 'https://freddev.no/wp-json/wc/v3/products?consumer_key=ck_30e8103f197d7cd1aa762d83de509977404484c5&consumer_secret=cs_7b79eaa839f2630192c85e81897ff47b8d826eee&featured=true';
+
 export const productListURL = productsURL + keys;
 
 const productsGridContainer = document.querySelector('.js-products-grid');

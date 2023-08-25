@@ -2,7 +2,10 @@ import { renderCartQuantity, addToCart } from "./cart.js";
 
 console.log('Loading productDetailPage.js');
 
-const productListURL = 'https://freddev.no/wp-json/wc/v3/products?consumer_key=ck_30e8103f197d7cd1aa762d83de509977404484c5&consumer_secret=cs_7b79eaa839f2630192c85e81897ff47b8d826eee';
+const selectedProductId = JSON.parse(localStorage.getItem('selectedProductId'));
+    console.log('selectedProductId', selectedProductId);
+
+const productListURL = `https://freddev.no/wp-json/wc/v3/products/${selectedProductId}?consumer_key=ck_30e8103f197d7cd1aa762d83de509977404484c5&consumer_secret=cs_7b79eaa839f2630192c85e81897ff47b8d826eee` ;
 
 const productDetail = document.querySelector('.js-product-detail-container');
 
@@ -11,15 +14,10 @@ productDetail.innerHTML = '<p>Loading...</p>';
 fetch(productListURL)
   .then(response => response.json())
   .then(productsData => {
-    console.log(productsData)
-    productDetail.innerHTML = '';
     
-    const selectedProductId = JSON.parse(localStorage.getItem('selectedProductId'));
-    console.log('selectedProductId', selectedProductId);
-    
-    
-    const matchingProduct = productsData.find(product => product.id === parseInt(selectedProductId));
-    console.log('matchingProduct', matchingProduct);
+    productDetail.innerHTML = '';   
+        
+    const matchingProduct = productsData;
     
     if (matchingProduct) {
       const productDetailHTML = `
