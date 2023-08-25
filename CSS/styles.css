@@ -185,7 +185,9 @@
   }
 
   #categoryA, 
-  .js-featured-products
+  .js-featured-products,
+  .featured-title,
+  .all-title
    {
     display: flex;
     justify-content: space-evenly;
@@ -194,6 +196,12 @@
     margin-right: auto;
     margin-top: 20px;
   }
+.js-featured-products {
+  content: "Featured Products";
+  border: 1px solid var(--main-orange);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .js-add-to-cart{
   border-radius: 10px;
   background-color: var(--main-orange);
