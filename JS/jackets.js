@@ -35,7 +35,7 @@ fetch(productListURL)
             <a class='JacketsImg js-product-detail' data-product-id="${product.id}" href='productDetailPage.html'>
               <img src="${product.images[0].src}" alt='Product' class='itemlist js-product-detail' data-product-id="${product.id}">
             </a>
-            <h2>${product.name}</h2>
+            <h2>${product.name} 💖</h2>
             <div class='description'>${product.description}</div>
             <h2 class='jacketPrice'> $ ${(product.price)}</h2> 
             <button class="add-to-cart-button js-add-to-cart" data-product-id="${product.id}">Add to cart</button>
