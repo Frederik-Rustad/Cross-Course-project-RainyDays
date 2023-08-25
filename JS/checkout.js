@@ -2,8 +2,6 @@ import { cart, removeFromCart, renderCartQuantity } from './cart.js';
 
 const productListURL = 'https://freddev.no/wp-json/wc/v3/products?consumer_key=ck_30e8103f197d7cd1aa762d83de509977404484c5&consumer_secret=cs_7b79eaa839f2630192c85e81897ff47b8d826eee';
 
-console.log('Loading checkout.js');
-
 const checkoutCart = document.querySelector('.js-chechout-cart');
 
 checkoutCart.innerHTML = '<p>Loading...</p>';
@@ -36,8 +34,7 @@ fetch(productListURL)
         `;
 
         checkoutCart.innerHTML += checkoutItemHTML;
-        console.log(cartItem);
-      }
+       }
     });
 
     document.querySelectorAll('.js-delete-button')
@@ -45,8 +42,7 @@ fetch(productListURL)
       button.addEventListener('click', () => {
         const productId = button.dataset.productId;
         removeFromCart(productId);
-        console.log(cart);
-
+        
         document.querySelector(`.js-cart-item-container-${productId}`).remove();
         renderCartQuantity();
       });
