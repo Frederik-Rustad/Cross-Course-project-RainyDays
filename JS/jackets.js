@@ -52,34 +52,32 @@ fetch(productListURL)
   });
 
 
-  document.querySelector('.js-products-grid').addEventListener('click', (event) => {
+  document.querySelector('.js-products-grid').addEventListener('click', handleAddToCart);
+  document.querySelector('.js-featured-products').addEventListener('click', handleAddToCart);
+  
+  function handleAddToCart(event) {
     if (event.target.classList.contains('js-add-to-cart')) {
       const productId = event.target.dataset.productId;
       addToCart(productId);
-      
       renderCartQuantity();
     }
-  });
+  }
 
-  document.querySelector('.js-featured-products').addEventListener('click', (event) => {
-    if (event.target.classList.contains('js-add-to-cart')) {
-      const productId = event.target.dataset.productId;
-      addToCart(productId);
-      
-      renderCartQuantity();
-    }
-  });
   renderCartQuantity()
 
   function getIdToDetailsPage() {
-    document.querySelector('.js-products-grid').addEventListener('click', (event) => {
+    function handleProductDetailClick(event) {
       if (event.target.classList.contains('js-product-detail')) {
-       
         const productId = event.target.dataset.productId;
         localStorage.setItem('selectedProductId', JSON.stringify(productId));
-       
       }
-    });
+    }
+  
+    document.querySelector('.js-products-grid').addEventListener('click', handleProductDetailClick);
+    document.querySelector('.js-featured-products').addEventListener('click', handleProductDetailClick);
   }
+  
+  getIdToDetailsPage();
+  
   
   getIdToDetailsPage();
