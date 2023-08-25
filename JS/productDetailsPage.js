@@ -32,14 +32,31 @@ fetch(productListURL)
              <h2 class="descriptiontext">${matchingProduct.description}</h2>
             </div>
          </div>
+         <div class="add-to-cart-grid">
          <button class="add-to-cart-button cta js-add-to-cart"
          data-product-id="${matchingProduct.id}">Add to cart</button>
+         <div class='added-to-cart-message' data-product-id="${matchingProduct.id}"> ✔ Added to cart!</div>
+         </div>
          `;
 
       productDetail.innerHTML = productDetailHTML;
     }
+    const addToCartButtons = document.querySelectorAll('.js-add-to-cart');
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const productContainer = button.closest('.add-to-cart-grid');
+        const addedMessage = productContainer.querySelector('.added-to-cart-message');
+        
+        addedMessage.classList.add('added-item');
+        
+        setTimeout(() => {
+          addedMessage.classList.remove('added-item');
+        }, 1500);        
+      });
+    });
   });
-
+   
+  
   document.querySelector('.js-product-detail-container').addEventListener('click', (event) => {
     if (event.target.classList.contains('js-add-to-cart')) {
       const productId = event.target.dataset.productId;
@@ -48,10 +65,10 @@ fetch(productListURL)
     }
   });
 
-renderCartQuantity();
-
-
-
+  renderCartQuantity();
+  
+   
+  
 /* <button class="cta" id="modal-btn" type="button">
 Add to cart <img src="images/cart.png" alt="cart icon" class="cart">
 </button> */

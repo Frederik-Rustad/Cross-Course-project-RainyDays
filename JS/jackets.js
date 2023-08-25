@@ -25,8 +25,11 @@ fetch(productListURL)
           <h2>${product.name}</h2>
           <div class='description'>${product.description}</div>
           <h2 class='jacketPrice'> $ ${(product.price)}</h2> 
+          <div class="add-to-cart-grid">
           <button class="add-to-cart-button js-add-to-cart" data-product-id="${product.id}">Add to cart</button>
-        </div> 
+          <div class='added-to-cart-message' data-product-id="${product.id}"> ✔ Added to cart!</div>
+          </div> 
+          </div> 
       `;
 
       if (product.featured === true) {
@@ -38,14 +41,31 @@ fetch(productListURL)
             <h2>${product.name} 💖</h2>
             <div class='description'>${product.description}</div>
             <h2 class='jacketPrice'> $ ${(product.price)}</h2> 
+            <div class="add-to-cart-grid">
             <button class="add-to-cart-button js-add-to-cart" data-product-id="${product.id}">Add to cart</button>
-          </div>
+            <div class='added-to-cart-message' data-product-id="${product.id}"> ✔ Added to cart!</div>
+            </div>
+            </div>
         `;
       }
     });
 
     productsGridContainer.innerHTML = products1HTML;
     featuredProductsContainer.innerHTML = featuredProductsHTML;
+
+    const addToCartButtons = document.querySelectorAll('.js-add-to-cart');
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const productContainer = button.closest('.add-to-cart-grid');
+        const addedMessage = productContainer.querySelector('.added-to-cart-message');
+        
+        addedMessage.classList.add('added-item');
+        
+        setTimeout(() => {
+          addedMessage.classList.remove('added-item');
+        }, 1500);        
+      });
+    });
   })
   .catch(error => {
     console.error('Error fetching products, Refresh the page:', error);
