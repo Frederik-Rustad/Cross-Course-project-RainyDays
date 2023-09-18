@@ -101,6 +101,3 @@ fetch(productListURL)
   }
   
   getIdToDetailsPage();
-  
-  
-  getIdToDetailsPage();
