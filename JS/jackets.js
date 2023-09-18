@@ -21,7 +21,7 @@ fetch(productListURL)
     data.forEach(product => {
       products1HTML += `
         <div class='cattext'>
-          <a class='JacketsImg js-product-detail' data-product-id="${product.id}" href='productDetailPage.html'>
+        <a class='JacketsImg js-product-detail' href='productDetailPage.html?id=${product.id}'>
             <img src="${product.images[0].src}" alt='Product' class='itemlist js-product-detail' data-product-id="${product.id}">
           </a>
           <h2>${product.name}</h2>
