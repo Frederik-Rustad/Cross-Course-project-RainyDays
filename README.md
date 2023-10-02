@@ -45,6 +45,7 @@ https://github.com/Frederik-Rustad/Cross-Course-project-RainyDays.git
 
  # Contact
 [My Twitter page](https://twitter.com/Penrose_Studio)
+
 [Frerus50251@stud.noroff.no](Frerus50251@stud.noroff.no)
 
 #  References
