@@ -2,7 +2,7 @@
 
 ![rainy](https://github.com/Frederik-Rustad/Cross-Course-project-RainyDays/assets/119454117/197957b6-99b6-4155-87b1-c83365b76f58)
 
-rainydays50251.netlify.app
+[rainydays50251.netlify.app](https://rainydays50251.netlify.app/)
 
 My journey through my first real project of making a web site. With all my trials and tribulations along the way from desing to consept.
 Rainydays is a Ecommerce web store page for Durable and confortable jackets.
