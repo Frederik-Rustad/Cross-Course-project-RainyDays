@@ -1,4 +1,4 @@
-## Rainydays 
+# Rainydays 
 
 ![rainy](https://github.com/Frederik-Rustad/Cross-Course-project-RainyDays/assets/119454117/197957b6-99b6-4155-87b1-c83365b76f58)
 
@@ -14,22 +14,22 @@ Rainydays is a Ecommerce web store page for Durable and confortable jackets.
  This includes the design, development, and implementation of a user-friendly and visually appealing website where customers can browse,
  select, and purchase various rain jacket products.
 
-# Website Design and Layout:
+## Website Design and Layout:
 
 - Create an intuitive and user-friendly website layout that provides easy navigation.
 - Choose a color scheme and design elements that resonate with the theme of rain jackets and outdoor activities.
 - Ensure that the website is responsive and accessible on various devices (desktop, tablet, mobile).
 
-# Product Catalog:
+## Product Catalog:
 
 - Organize the products into categories (e.g., men's, women's, different styles,).
 Include high-quality images and detailed product descriptions for each item.
 
-# E-commerce Functionality:
+## E-commerce Functionality:
 
 - Implement a shopping cart system that allows customers to add and remove products.
 
-## Buuilt with
+# Buuilt with
 
 - Html
 - CSS
@@ -42,21 +42,21 @@ Include high-quality images and detailed product descriptions for each item.
 https://github.com/Frederik-Rustad/Cross-Course-project-RainyDays.git
 ```
 
- # Contributing
+ ## Contributing
 
- # Contact
+ ## Contact
 [My Twitter page](https://twitter.com/Penrose_Studio)
 
 [Frerus50251@stud.noroff.no](Frerus50251@stud.noroff.no)
 
-#  References
+##  References
 
 -	Flexbox Crash Course https://www.youtube.com/watch?v=3YW65K6LcIA 
 -	CSS Grids Crash Course https://www.youtube.com/watch?v=0xMQfnTU6oo&t=1735s
 -	JavaScript course - SuperSimpleDev
 
 
-#  Acknowledgements
+##  Acknowledgements
    
 Morten Olsen - User testing
 Dag Andrè jordansen - User testing
