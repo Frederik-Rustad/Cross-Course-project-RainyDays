@@ -18,6 +18,7 @@ Rainydays is a Ecommerce web store page for Durable and confortable jackets.
 
 - Create an intuitive and user-friendly website layout that provides easy navigation.
 - Choose a color scheme and design elements that resonate with the theme of rain jackets and outdoor activities.
+- Ensure that the website is responsive and accessible on various devices (desktop, tablet, mobile).
 
 # Product Catalog:
 
