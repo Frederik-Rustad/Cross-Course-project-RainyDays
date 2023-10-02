@@ -1,43 +1,62 @@
-# HTML_and_CSS_CA
-CA Rainydays 
+## Rainydays 
+
+![rainy](https://github.com/Frederik-Rustad/Cross-Course-project-RainyDays/assets/119454117/197957b6-99b6-4155-87b1-c83365b76f58)
 
 rainydays50251.netlify.app
 
-1. Summary
-
 My journey through my first real project of making a web site. With all my trials and tribulations along the way from desing to consept.
+Rainydays is a Ecommerce web store page for Durable and confortable jackets.
+
+## Description
+
+ I have created an e-commerce website focused on selling rain jackets. 
+ The project aims to simulate the development and launch of an online store that specializes in rainwear. 
+ This includes the design, development, and implementation of a user-friendly and visually appealing website where customers can browse,
+ select, and purchase various rain jacket products.
+
+# Website Design and Layout:
+
+- Create an intuitive and user-friendly website layout that provides easy navigation.
+- Choose a color scheme and design elements that resonate with the theme of rain jackets and outdoor activities.
+
+# Product Catalog:
+
+- Organize the products into categories (e.g., men's, women's, different styles,).
+Include high-quality images and detailed product descriptions for each item.
+
+# E-commerce Functionality:
+
+- Implement a shopping cart system that allows customers to add and remove products.
+
+## Buuilt with
+
+- Html
+- CSS
+- JavaScript
 
 
-2. Main section of report
+## GitHub
 
-While going through the exercises and lesson tasks in the HTML and CSS -Module 1-4, I started whith the Course Assignment simultaneously, that  in turn made me start with the Desktop version and scaling it down later and not the other way around.
-It wasn’t until later, where every video tutorial I watched said to start with Mobile and scale up, but I was already rather far along and desided to just continue.
+```
+https://github.com/Frederik-Rustad/Cross-Course-project-RainyDays.git
+```
 
-The most noticable change from the Design-1 to now is the nav bar that got a minor facelift. The new Navigation bar has sligtly more compact elements instead of covering the entire length of the header.
-The rest of the site is pretty much the same as the original design.
- 
+ # Contributing
 
-I had a couple of pop-up’s for the indication of successfully added item to cart and order complete, that gave me some trouble and I ended up following some tutorials to code alongside (mainly Traversy Media, see 3.References)
+ # Contact
+[My Twitter page](https://twitter.com/Penrose_Studio)
+[Frerus50251@stud.noroff.no](Frerus50251@stud.noroff.no)
 
+#  References
 
-The hamburger menu as well gave me some trouble, where every method I looked up needed JavaScript. Until much later when I figured out to just use a simple dropdown menu instead. 
-
-
-The down scaling didn’t give me as much trouble as I first anticipated, but next time I’ll start with Mobile and work my way up.
-
-The navigation bar could have had more work on it and scince I honestly didn’t figure out the mobile dropdown menu until the end is the reason there is two nav’s and for the lowest @ Media the first one is just hidden in favor of the dropdown menu. I just ran out of time to make them one responsive one.
-
-
-3. References
-
--	Create a Modal With HTML,CSS and JavaScript https://youtu.be/6ophW7Ask_0 
-    by  Traversy Media
 -	Flexbox Crash Course https://www.youtube.com/watch?v=3YW65K6LcIA 
 -	CSS Grids Crash Course https://www.youtube.com/watch?v=0xMQfnTU6oo&t=1735s
+-	JavaScript course - SuperSimpleDev
 
 
-4. Acknowledgements
-
+#  Acknowledgements
+   
+Morten Olsen - User testing
 Dag Andrè jordansen - User testing
 Tord Åke Larsson - Peer Feedback
 Kenneth Collins - Peer Feedback
